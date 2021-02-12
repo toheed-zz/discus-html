@@ -10891,6 +10891,7 @@ h3 {
   background-position: 50% 50%;
   padding: 540px 0;
   position: relative;
+  overflow: hidden;
 }
 
 .about-area h2 {
@@ -11162,6 +11163,7 @@ h3 {
   border: 1px solid #666;
   background: #222;
   width: 100%;
+  color: #fff;
 }
 
 .steps-area .submit {
@@ -11174,6 +11176,12 @@ h3 {
   border: none;
   display: block;
   margin: 0 0 26px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.steps-area .submit:hover {
+  background: #4a080e;
 }
 
 .social-area {
@@ -11228,8 +11236,13 @@ h3 {
   color: #fff;
 }
 
+.social-area .list a:hover {
+  color: #beb9b9;
+}
+
 .tagline.add {
   background: #ffb017;
+  color: #666;
 }
 
 .tagline.add .btn-primary {
@@ -11300,6 +11313,68 @@ h3 {
   margin: 0;
 }
 
+.footer .copyrights a {
+  color: #444;
+}
+
+.footer .copyrights a:hover {
+  color: #fff;
+}
+
+.radio-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.radio-holder label {
+  display: block;
+  margin: 0 10px;
+}
+
+.radio-holder .label-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90px;
+  height: 50px;
+  border: 1px solid #616161;
+  background: #222;
+  color: #5f5f5f;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.radio-holder .label-text:hover {
+  background: #780b14;
+  color: #f2e7e8;
+  border-color: #780b14;
+}
+
+.radio-holder input[type="radio"] {
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.radio-holder input[type="radio"]:checked + .label-text {
+  background: #780b14;
+  color: #f2e7e8;
+  border-color: #780b14;
+}
+
 /** @define header **/
 
 /* stylelint-disable */
@@ -11325,8 +11400,12 @@ h3 {
   color: #fff;
 }
 
+.header .info a:hover {
+  color: #beb9b9;
+}
+
 .header .info .cart {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .header-holder {
@@ -11367,6 +11446,57 @@ h3 {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.lang-holder .lang-opener {
+  display: block;
+  position: relative;
+  padding-right: 20px;
+}
+
+.lang-holder .lang-opener:before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-family: 'icomoon' !important;
+  content: "\E902";
+  font-size: 24px;
+  line-height: 1;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.lang-holder.active .lang-opener:before {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.lang-holder .slide {
+  position: absolute;
+  right: 25px;
+  width: 250px;
+  background: #141414;
+  top: 30px;
+}
+
+.lang-holder .lang-list {
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.lang-holder .lang-list li {
+  border-bottom: 1px solid #000;
+}
+
+.lang-holder .lang-list a {
+  display: block;
+  padding: 15px 25px;
+}
+
+.lang-holder .lang-list a:hover {
+  background: #444;
 }
 
 /** @define nav-opener **/
