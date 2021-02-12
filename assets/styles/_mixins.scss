@@ -1,0 +1,68 @@
+// Custom mixins here
+
+@mixin fontsize($value1, $value2) {
+  font-size: $value1;
+  line-height: $value2;
+}
+
+@mixin font-size($value1, $value2) {
+  font-size: $value1;
+  line-height: $value2;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+// mixin for Alignment
+@mixin v-align($value1, $value2) {
+  display: $value1;
+  vertical-align: $value2;
+}
+
+// mixin for position
+@mixin position () {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+// img-responsive
+@mixin img-style {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+// reset for list
+@mixin listreset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// mixin for font face
+@mixin fontface ($fontfamily, $filename, $font-weight, $font-style) {
+  font-family: $fontfamily;
+  src:url('../fonts/#{$filename}.woff') format('woff'),
+    url('../fonts/#{$filename}.woff') format('woff2');
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+
+// mixin for position
+@mixin position () {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

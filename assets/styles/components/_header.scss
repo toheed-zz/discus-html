@@ -1,0 +1,53 @@
+/** @define header **/
+/* stylelint-disable */
+.header {
+  padding: 11px 0 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+      color: #fff;
+    }
+
+    .cart {
+      margin-left: 6px;
+    }
+  }
+}
+
+.header-holder {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 58px;
+}
+
+.logo-urban {
+  position: relative;
+  width: 353px;
+  margin-top: 65px;
+
+  img {
+    @include img-style;
+  }
+}
+
+.logo {
+  display: block;
+  width: 118px;
+  
+  a {
+    display: block;
+  }
+  img {
+    @include img-style;
+  }
+}

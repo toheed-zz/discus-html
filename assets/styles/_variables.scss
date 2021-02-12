@@ -1,0 +1,43 @@
+// custom variables and override bootstrap variables
+$gray: #656565;
+$white: #fff;
+$black: #000;
+$gray2: #f6f6f6;
+$gray3: #363636;
+$base-min-width: 320px;
+// This is the default html and body font-size for the base rem value.
+$theme-colors: (
+  primary: #f1764b,
+  secondary: #f7941d,
+);
+$grid-breakpoints: (
+  xs: 0, 
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1460px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1440px
+);
+
+
+$blue: #0152aa;
+
+
+$arial-font: 'Arial', 'Helvetica', sans-serif;
+$kufam-font: 'Kufam', cursive;
+$oswald-font: 'Oswald', $arial-font;
+$roboto-font: 'Roboto', $arial-font;
+$maven-font: 'Maven Pro', $arial-font;
+$philosopher-font: 'Philosopher', $arial-font;
+$link-hover-decoration: none;
+$font-family-base: $kufam-font;
+$headings-font-family: $philosopher-font;
+$headings-font-weight: 400;
+$h1-font-size: 75px;
+$h2-font-size: 50px;
+$h3-font-size: 30px;

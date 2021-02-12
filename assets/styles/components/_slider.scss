@@ -1,0 +1,128 @@
+/* stylelint-disable */
+.slick-slider {
+  position: relative;
+  user-select: none;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+  &:focus {
+    outline: none;
+  }
+  &.dragging {
+    cursor: pointer;
+  }
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  .slick-loading & {
+    visibility: hidden;
+  }
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+  [dir="rtl"] & {
+    float: right;
+  }
+  img {
+    display: block;
+  }
+  &.slick-loading img {
+    display: none;
+  }
+  &.dragging img {
+    pointer-events: none;
+  }
+  .slick-initialized & {
+    display: block;
+  }
+  .slick-loading & {
+    visibility: hidden;
+  }
+  .slick-vertical & {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+  }
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.slick-dots {
+	position: relative;
+	left: 12px;
+	bottom: 140px;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	width: 1170px;
+	margin: 0 auto;
+	@include media-breakpoint-down(lg) {
+		bottom: 70px;
+		left: 15px;
+		max-width: 960px;
+	}
+	@include media-breakpoint-down(md) {
+		bottom: 50px;
+		max-width: 720px;
+	}
+	@include media-breakpoint-down(sm) {
+		max-width: 100%;
+	}
+	li {
+		position: relative;
+		padding: 0 19px 0 0;
+		&.slick-active {
+			button {
+				background: #919089;
+			}
+		}
+	}
+	button {
+		@include fontsize(0, 0);
+		@include size(12px, 12px);
+		cursor: pointer;
+		transition: all 0.4s ease;
+		border: none;
+		background: #c0c0c0;
+		outline: none;
+		border-radius: 50%;
+		border: none;
+		padding: 0;
+		@include media-breakpoint-down(sm) {
+			@include size(7px, 7px);
+		}
+		&:hover {
+			background: #919089;
+		}
+	}
+}

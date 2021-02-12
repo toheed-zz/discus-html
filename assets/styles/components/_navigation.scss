@@ -1,0 +1,135 @@
+/** @define nav-opener **/
+/* stylelint-disable */
+.menu-opener {
+  @include size(31px, 16px);
+  transition: all 0.4s ease;
+  border-radius: 3px;
+  background: none;
+  position: absolute;
+  left: 15px;
+  top: 16px;
+  z-index: 20;
+  display: none;
+
+  .menu-active & {
+    border-top: 0;
+  }
+
+  span {
+    display: block;
+    &:before {
+      @include size(31px, 2px);
+      background: $white;
+      transition: all 0.4s ease;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+
+      .menu-active & {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &:after,
+  &:before {
+    @include size(31px, 2px);
+    background: $white;
+    transition: all 0.4s ease;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 13px;
+
+    .menu-active & {
+      transform: rotate(45deg);
+    }
+  }
+  &:before {
+    top: 19px;
+
+    .menu-active & {
+      transform: rotate(-45deg);
+      top: 13px;
+    }
+  }
+}
+
+/** @define nav-drop **/
+.nav-drop {
+
+  @include media-breakpoint-down(sm) {
+    transition: all 0.4s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    max-height: 0;
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+    .menu-active & {
+      max-height: 4000px;
+    }
+  }
+}
+
+/** @define nav-area **/
+.nav-area {
+  @include media-breakpoint-down(sm) {
+   background: #1a5b98;
+   position: relative;
+   transition: all 0.4s ease;
+   transform: translateY(-100%);
+   text-align: center;
+
+   .menu-active & {
+      transform: translateY(0);
+    }
+  }
+}
+
+
+.menu {
+  margin: 0 -13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: $roboto-font;
+  font-size: 12px;
+  line-height: 15px;
+
+  li {
+    padding: 0 13px;
+  }
+
+  a {
+    color: #fff;
+    display: block;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      bottom: -11px;
+      height: 1px;
+      width: 0;
+      content: '';
+      background: #fff;
+      transition: all 0.4s ease;
+    }
+
+    &:hover {
+      &:before {
+        left: 0;
+        right: 0;
+        width: 100%;
+      }
+    }
+  }
+}

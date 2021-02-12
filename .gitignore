@@ -1,0 +1,45 @@
+# WordPress
+wp-admin/
+wp-includes/
+/wp-*
+/xmlrpc
+/index.php
+/.htaccess
+/license.txt
+/readme.html
+/xmlrpc.php
+/assets/node_modules
+
+# wp-content folder
+!wp-content/
+wp-content/mu-plugins/*
+!wp-content/mu-plugins/.gitkeep
+!wp-content/mu-plugins/bedrock-autoloader.php
+wp-content/plugins/*
+!wp-content/plugins/.gitkeep
+wp-content/themes/*
+!wp-content/themes/best-practices-theme/
+wp-content/upgrade
+wp-content/uploads/*
+!wp-content/uploads/.gitkeep
+
+# Composer
+vendor/*
+!vendor/laravel/homestead/
+!vendor/.gitkeep
+
+#IDE
+.idea/
+
+#Homestead
+.vagrant/
+/Homestead.yaml
+
+#Premium Plugins
+!wp-retina-2x-pro/
+
+# Common junk files
+/*.sql
+
+# Github hook file
+webhook.php

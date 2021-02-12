@@ -1,0 +1,8 @@
+/**
+ * This file is to hold utlity classes that are needed but not included in some way with bootstrap.
+ * A utility class is something that sets an additonal property on a non-specific elemnent.
+ * They should be common classes that are resused often.
+ * 
+ * EX)
+ *  fix-right-with-translucent to fix an arbitrary element to the right of the screen in a spefic manner
+ */
