@@ -13,6 +13,12 @@
     flex-wrap: wrap;
     font-size: 12px;
 
+    @include media-breakpoint-down(md) {
+      position: absolute;
+      right: 0;
+      top: 3px;
+    }
+
     a {
       color: #fff;
 
@@ -33,12 +39,21 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 0 61px;
+
+  @include media-breakpoint-down(md) {
+    justify-content: center;
+  }
 }
 
 .logo-urban {
   position: relative;
   width: 353px;
   margin-top: 52px;
+
+  @include media-breakpoint-down(md) {
+    width: 240px;
+    margin-top: 40px;
+  }
 
   img {
     @include img-style;
@@ -50,6 +65,10 @@
 .logo {
   display: block;
   width: 118px;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
   
   a {
     display: block;

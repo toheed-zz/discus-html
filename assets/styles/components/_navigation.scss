@@ -1,15 +1,19 @@
 /** @define nav-opener **/
 /* stylelint-disable */
 .menu-opener {
-  @include size(31px, 16px);
+  @include size(26px, 16px);
   transition: all 0.4s ease;
   border-radius: 3px;
   background: none;
   position: absolute;
-  left: 15px;
-  top: 16px;
+  left: 10px;
+  top: 5px;
   z-index: 20;
   display: none;
+
+  @include media-breakpoint-down(md) {
+    display: block;
+  }
 
   .menu-active & {
     border-top: 0;
@@ -18,7 +22,7 @@
   span {
     display: block;
     &:before {
-      @include size(31px, 2px);
+      @include size(26px, 2px);
       background: $white;
       transition: all 0.4s ease;
       content: '';
@@ -35,7 +39,7 @@
 
   &:after,
   &:before {
-    @include size(31px, 2px);
+    @include size(26px, 2px);
     background: $white;
     transition: all 0.4s ease;
     content: '';
@@ -60,12 +64,14 @@
 /** @define nav-drop **/
 .nav-drop {
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     transition: all 0.4s ease;
     position: absolute;
-    top: 100%;
+    top: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
+    width: 280px;
+    height: 100vh;
     overflow: hidden;
     padding: 0;
     max-height: 0;
@@ -80,16 +86,20 @@
 
 /** @define nav-area **/
 .nav-area {
-  @include media-breakpoint-down(sm) {
-   background: #1a5b98;
+  @include media-breakpoint-down(md) {
+   background: #222;
    position: relative;
    transition: all 0.4s ease;
-   transform: translateY(-100%);
+   transform: translateX(-100%);
    text-align: center;
 
    .menu-active & {
-      transform: translateY(0);
+      transform: translateX(0);
     }
+  }
+
+  .menu-opener {
+    left: 240px;
   }
 }
 
@@ -103,14 +113,31 @@
   font-size: 12px;
   line-height: 15px;
 
+  @include media-breakpoint-down(md) {
+    height: 100vh;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 70px;
+  }
+
   li {
     padding: 0 15px;
+
+    @include media-breakpoint-down(md) {
+      border-bottom: 1px solid #000;
+    }
   }
 
   a {
     color: #fff;
     display: block;
     position: relative;
+
+    @include media-breakpoint-down(md) {
+      display: block;
+      padding: 10px 0;
+    }
 
     &:before {
       position: absolute;
@@ -122,9 +149,17 @@
       content: '';
       background: #fff;
       transition: all 0.4s ease;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
     }
 
     &:hover {
+      @include media-breakpoint-down(md) {
+        background: #000;
+      }
+      
       &:before {
         left: 0;
         right: 0;

@@ -62,14 +62,29 @@ a {
 
 .h1 , h1 {
   line-height: 75px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 50px;
+    line-height: 52px;
+  }
 }
 
 .h2 , h2 {
   line-height: 54px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
 
 .h3 , h3 {
   line-height: 34px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .wrapper {
@@ -79,6 +94,12 @@ a {
 
 .main {
   position: relative;
+}
+
+.menu-active {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .container {
