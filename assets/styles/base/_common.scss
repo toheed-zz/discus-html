@@ -189,7 +189,8 @@ a {
     height: 100vh;
 
     .text-holder {
-      max-width: 438px;
+      max-width: 530px;
+      padding: 0 0 146px 86px;
 
       .h2 {
         margin: 0;
@@ -626,6 +627,32 @@ a {
       background: #4a080e;
     }
   }
+
+  .alert-text {
+    display: block;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 0 15px;
+  }
+
+  .text-holder {
+    text-align: center;
+    color: #555;
+    font-size: 12px;
+    line-height: 22px;
+
+    a {
+      color: #555;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
 }
 
 .social-area {
@@ -682,6 +709,11 @@ a {
   &.add {
     background: #ffb017;
     color: #666;
+
+    .description {
+      margin: 0 10px 0 0;
+      letter-spacing: 0;
+    }
 
     .btn-primary {
       background: #780b14;
