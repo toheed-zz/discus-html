@@ -10691,6 +10691,7 @@ h3 {
   display: block;
   width: 100%;
   height: auto;
+  margin-left: 0 !important;
 }
 
 .banner-section.section02 {
@@ -11338,7 +11339,8 @@ h3 {
 }
 
 .footer .logo-urban {
-  margin: 0 0 0 15px;
+  margin: 0 0 0 25px;
+  width: 285px;
 }
 
 .footer .copyrights {

@@ -141,6 +141,7 @@ a {
 
       img {
         @include img-style;
+        margin-left: 0 !important;
       }
     }
   }
@@ -759,7 +760,8 @@ a {
   }
 
   .logo-urban {
-    margin: 0 0 0 15px;
+    margin: 0 0 0 25px;
+    width: 285px;
   }
 
   .copyrights {
