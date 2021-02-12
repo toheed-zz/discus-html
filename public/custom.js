@@ -8,13 +8,12 @@ $(window).scroll(function(){
     }
 });
 
-var removesticky = $('.steps').offset().top;
+var removesticky = $('.quote-area').offset().top;
 $(window).scroll(function(){    
-    if ($(this).scrollTop() + 200 > removesticky){ 
+    if ($(this).scrollTop() - 1700 > removesticky){ 
         $('.cta1').removeClass('fixed');
     }
 });
-
 
 jQuery(function() {
 	initAnchors();
