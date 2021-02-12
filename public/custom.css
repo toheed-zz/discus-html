@@ -45,9 +45,10 @@
 }
 .cta1 {
     visibility: hidden;
+    position: absolute;
 }
 .cta1.fixed {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 99;
     width: 100%;
