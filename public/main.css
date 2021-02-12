@@ -11403,6 +11403,7 @@ h3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  font-size: 12px;
 }
 
 .header .info a {
@@ -11460,16 +11461,16 @@ h3 {
 .lang-holder .lang-opener {
   display: block;
   position: relative;
-  padding-right: 20px;
+  padding-right: 15px;
 }
 
 .lang-holder .lang-opener:before {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -3px;
   font-family: 'icomoon' !important;
   content: "\E902";
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -11483,14 +11484,14 @@ h3 {
 .lang-holder .slide {
   position: absolute;
   right: 25px;
-  width: 250px;
+  width: 200px;
   background: #141414;
   top: 30px;
 }
 
 .lang-holder .lang-list {
   padding: 0;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   margin: 0;
 }
@@ -11501,7 +11502,7 @@ h3 {
 
 .lang-holder .lang-list a {
   display: block;
-  padding: 15px 25px;
+  padding: 10px 25px;
 }
 
 .lang-holder .lang-list a:hover {
