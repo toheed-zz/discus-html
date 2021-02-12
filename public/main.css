@@ -10694,7 +10694,7 @@ h3 {
 }
 
 .banner-section.section02 {
-  height: 1100px;
+  height: 1126px;
   background: #141414;
 }
 
@@ -10717,15 +10717,20 @@ h3 {
 
 .banner-section.section02 .images-holder .image {
   position: absolute;
-  left: 0;
-  top: -165px;
+  left: -117px;
+  top: -160px;
   z-index: 3;
 }
 
 .banner-section.section02 .images-holder .image.add {
   left: auto;
-  right: -75px;
+  right: 181px;
+  top: -151px;
   z-index: 2;
+}
+
+.banner-section.section02 .text-holder {
+  padding: 0 0 142px 34px;
 }
 
 .banner-section.section03 {
@@ -10830,7 +10835,7 @@ h3 {
   position: relative;
   background: url(./images/bg-tagline.jpg?af276580ceb7495744eeda77e7726cac) no-repeat;
   background-size: cover;
-  padding: 35px 0;
+  padding: 41px 0;
   font-size: 14px;
   line-height: 18px;
   color: #000;
@@ -10872,12 +10877,16 @@ h3 {
 }
 
 .tagline .description {
-  margin-right: 85px;
+  margin-right: 96px;
+  margin-left: 27px;
+  letter-spacing: 0.8px;
 }
 
 .tagline .h3 {
   color: #fff;
-  margin: 0 0 5px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin: 0 0 9px;
 }
 
 .tagline p {
@@ -11418,13 +11427,13 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 0 58px;
+  margin: 0 0 61px;
 }
 
 .logo-urban {
   position: relative;
   width: 353px;
-  margin-top: 65px;
+  margin-top: 52px;
 }
 
 .logo-urban img {
@@ -11614,7 +11623,7 @@ h3 {
 }
 
 .menu {
-  margin: 0 -13px;
+  margin: 0 -15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11629,7 +11638,7 @@ h3 {
 }
 
 .menu li {
-  padding: 0 13px;
+  padding: 0 15px;
 }
 
 .menu a {

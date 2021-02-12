@@ -31,18 +31,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 0 58px;
+  margin: 0 0 61px;
 }
 
 .logo-urban {
   position: relative;
   width: 353px;
-  margin-top: 65px;
+  margin-top: 52px;
 
   img {
     @include img-style;
   }
 }
+
+
 
 .logo {
   display: block;

@@ -146,7 +146,7 @@ a {
   }
 
   &.section02 {
-    height: 1100px;
+    height: 1126px;
     background: #141414;
 
     &:before {
@@ -167,16 +167,21 @@ a {
 
       .image {
         position: absolute;
-        left: 0;
-        top: -165px;
+        left: -117px;
+        top: -160px;
         z-index: 3;
 
         &.add {
           left: auto;
-          right: -75px;
+          right: 181px;
+          top: -151px;
           z-index: 2;
         }
       }
+    }
+
+    .text-holder {
+      padding: 0 0 142px 34px;
     }
   }
 
@@ -281,7 +286,7 @@ a {
   position: relative;
   background: url('../../img/bg-tagline.jpg') no-repeat;
   background-size: cover;
-  padding: 35px 0;
+  padding: 41px 0;
   font-size: 14px;
   line-height: 18px;
   color: #000;
@@ -310,12 +315,16 @@ a {
   }
 
   .description {
-    margin-right: 85px;
+    margin-right: 96px;
+    margin-left: 27px;
+    letter-spacing: 0.8px;
   }
 
   .h3 {
     color: #fff;
-    margin: 0 0 5px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin: 0 0 9px;
   }
 
   p {
