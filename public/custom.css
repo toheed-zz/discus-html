@@ -33,12 +33,6 @@
     50%{transform: rotate(-3deg)}
     100%{transform: rotate(5deg);}
 }
-
-.tagline {
-    position: sticky;
-    z-index: 99;
-    top: 0
-}
 .banner-section.section06 .text-wrap {
     margin-bottom: 20px;
 }
@@ -47,5 +41,15 @@
 }
 .info-section .description {
     position: sticky;
+    top: 60px;
+}
+.cta1 {
+    visibility: hidden;
+}
+.cta1.fixed {
+    position: sticky;
     top: 0;
+    z-index: 99;
+    width: 100%;
+    visibility: visible;
 }
