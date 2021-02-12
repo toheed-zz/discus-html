@@ -286,7 +286,7 @@ a {
 
 .tagline {
   position: relative;
-  background: url('../../img/bg-tagline.jpg') no-repeat;
+  background: url('../img/bg-tagline.jpg') no-repeat;
   background-size: cover;
   padding: 41px 0;
   font-size: 14px;
@@ -407,7 +407,7 @@ a {
     right: 0;
     bottom: 0;
     content: '';
-    background: url('../../img/image6.jpg') no-repeat;
+    background: url('../img/image6.jpg') no-repeat;
     height: 1353px;
     background-size: cover;
     z-index: -1;
@@ -528,7 +528,7 @@ a {
 
 .steps-area {
   position: relative;
-  background: url('../../img/image8.jpg') no-repeat 50% 0 #141414;
+  background: url('../img/image8.jpg') no-repeat 50% 0 #141414;
   padding: 350px 0;
 
   .steps-list {
