@@ -8,9 +8,9 @@ $(window).scroll(function(){
     }
 });
 
-var removesticky = $('.steps-area').offset().top;
+var removesticky = $('.steps').offset().top;
 $(window).scroll(function(){    
-    if ($(this).scrollTop() > removesticky){ 
+    if ($(this).scrollTop() + 200 > removesticky){ 
         $('.cta1').removeClass('fixed');
     }
 });
