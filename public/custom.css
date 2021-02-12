@@ -39,3 +39,9 @@
     z-index: 99;
     top: 0
 }
+.banner-section.section06 .text-wrap {
+    margin-bottom: 20px;
+}
+.animate__.animate__slideOutLeft {
+    visibility: hidden !important;
+}
