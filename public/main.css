@@ -10691,10 +10691,11 @@ h3 {
   display: block;
   width: 100%;
   height: auto;
+  margin-left: 0 !important;
 }
 
 .banner-section.section02 {
-  height: 1100px;
+  height: 1126px;
   background: #141414;
 }
 
@@ -10717,15 +10718,20 @@ h3 {
 
 .banner-section.section02 .images-holder .image {
   position: absolute;
-  left: 0;
-  top: -165px;
+  left: -117px;
+  top: -160px;
   z-index: 3;
 }
 
 .banner-section.section02 .images-holder .image.add {
   left: auto;
-  right: -75px;
+  right: 181px;
+  top: -151px;
   z-index: 2;
+}
+
+.banner-section.section02 .text-holder {
+  padding: 0 0 142px 34px;
 }
 
 .banner-section.section03 {
@@ -10733,7 +10739,8 @@ h3 {
 }
 
 .banner-section.section03 .text-holder {
-  max-width: 438px;
+  max-width: 530px;
+  padding: 0 0 146px 86px;
 }
 
 .banner-section.section03 .text-holder .h2 {
@@ -10830,7 +10837,7 @@ h3 {
   position: relative;
   background: url(./images/bg-tagline.jpg?af276580ceb7495744eeda77e7726cac) no-repeat;
   background-size: cover;
-  padding: 35px 0;
+  padding: 41px 0;
   font-size: 14px;
   line-height: 18px;
   color: #000;
@@ -10872,12 +10879,16 @@ h3 {
 }
 
 .tagline .description {
-  margin-right: 85px;
+  margin-right: 96px;
+  margin-left: 27px;
+  letter-spacing: 0.8px;
 }
 
 .tagline .h3 {
   color: #fff;
-  margin: 0 0 5px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin: 0 0 9px;
 }
 
 .tagline p {
@@ -11184,6 +11195,32 @@ h3 {
   background: #4a080e;
 }
 
+.steps-area .alert-text {
+  display: block;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0 0 15px;
+}
+
+.steps-area .text-holder {
+  text-align: center;
+  color: #555;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.steps-area .text-holder a {
+  color: #555;
+  text-decoration: underline;
+}
+
+.steps-area .text-holder a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
 .social-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11245,6 +11282,11 @@ h3 {
   color: #666;
 }
 
+.tagline.add .description {
+  margin: 0 10px 0 0;
+  letter-spacing: 0;
+}
+
 .tagline.add .btn-primary {
   background: #780b14;
   border-color: #780b14;
@@ -11297,7 +11339,8 @@ h3 {
 }
 
 .footer .logo-urban {
-  margin: 0 0 0 15px;
+  margin: 0 0 0 25px;
+  width: 285px;
 }
 
 .footer .copyrights {
@@ -11394,6 +11437,7 @@ h3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  font-size: 12px;
 }
 
 .header .info a {
@@ -11418,13 +11462,13 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 0 58px;
+  margin: 0 0 61px;
 }
 
 .logo-urban {
   position: relative;
   width: 353px;
-  margin-top: 65px;
+  margin-top: 52px;
 }
 
 .logo-urban img {
@@ -11451,16 +11495,16 @@ h3 {
 .lang-holder .lang-opener {
   display: block;
   position: relative;
-  padding-right: 20px;
+  padding-right: 15px;
 }
 
 .lang-holder .lang-opener:before {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -3px;
   font-family: 'icomoon' !important;
   content: "\E902";
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -11474,14 +11518,14 @@ h3 {
 .lang-holder .slide {
   position: absolute;
   right: 25px;
-  width: 250px;
+  width: 200px;
   background: #141414;
   top: 30px;
 }
 
 .lang-holder .lang-list {
   padding: 0;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   margin: 0;
 }
@@ -11492,7 +11536,7 @@ h3 {
 
 .lang-holder .lang-list a {
   display: block;
-  padding: 15px 25px;
+  padding: 10px 25px;
 }
 
 .lang-holder .lang-list a:hover {
@@ -11614,7 +11658,7 @@ h3 {
 }
 
 .menu {
-  margin: 0 -13px;
+  margin: 0 -15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11629,7 +11673,7 @@ h3 {
 }
 
 .menu li {
-  padding: 0 13px;
+  padding: 0 15px;
 }
 
 .menu a {
