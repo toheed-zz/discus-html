@@ -6,6 +6,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;600;700&family=Maven+Pro:wght@700&family=Oswald&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
 	<title>Peta-Urban</title>
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="custom.css">
+	<link rel="stylesheet" href="animate.min.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -58,7 +60,7 @@
 				<div class="image bg-stretch">
 					<img src="images/slide1.jpg" alt="image-description">
 				</div>
-				<div class="image-overlay bg-stretch">
+				<div class="image-overlay bg-stretch wow animate__animated animate__fadeIn animate__delay-1s animate__slower">
 					<img src="images/slide2.jpg" alt="image-description">
 				</div>
 			</section>
@@ -67,15 +69,15 @@
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="text-holder">
-								<strong class="title h3">When it comes to ripping <br>the skin off a living thing,</strong>
-								<h1>where do you <br>draw the line?</h1>
+								<strong class="title h3 wow animate__animated animate__fadeIn animate__delay-1s animate__slow">When it comes to ripping <br>the skin off a living thing,</strong>
+								<h1 class="wow animate__animated animate__fadeIn animate__delay-2s animate__slow">where do you <br>draw the line?</h1>
 							</div>
 						</div>
 						<div class="col-lg-6 images-holder">
-							<div class="image">
+							<div class="image swingimage">
 								<img src="images/image1.png" alt="image-description">
 							</div>
-							<div class="image add">
+							<div class="image add swingimage2">
 								<img src="images/image2.png" alt="image-description">
 							</div>
 						</div>
@@ -100,7 +102,7 @@
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="text-holder">
-								<h1 class="h2">Why is it ok to raise a sheep just to pull off it’s wool?</h1>
+								<h1 class="h2 wow animate__animated animate__fadeIn animate__delay-1s animate__slow">Why is it ok to raise a sheep just to pull off it’s wool?</h1>
 							</div>
 						</div>
 					</div>
@@ -114,7 +116,7 @@
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="text-holder">
-								<h1 class="h2">Why is it ok to starve a cow for better leather?</h1>
+								<h1 class="h2 wow animate__animated animate__fadeIn animate__delay-1s animate__slow">Why is it ok to starve a cow for better leather?</h1>
 							</div>
 						</div>
 					</div>
@@ -128,7 +130,7 @@
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="text-holder">
-								<h1 class="h2">Why is it not ok to send a human to a slaughterhouse?</h1>
+								<h1 class="h2 wow animate__animated animate__fadeIn animate__delay-1s animate__slow">Why is it not ok to send a human to a slaughterhouse?</h1>
 							</div>
 						</div>
 					</div>
@@ -138,12 +140,12 @@
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-lg-6">
-							<div class="text-wrap">
+							<div class="text-wrap wow animate__animated animate__fadeInDown animate__delay-1s animate__slow">
 								<strong class="title h2">We need to</strong>
 								<h2 class="h1">stop drawing lines</h2>
 							</div>
-							<div class="bar"></div>
-							<div class="text-wrap add">
+							<div class="bar wow animate__animated animate__slideOutLeft animate__delay-4s animate__slow"></div>
+							<div class="text-wrap add wow animate__animated animate__fadeInUp animate__delay-3s animate__slow">
 								<h2 class="h1">between living things.</h2>
 								<p>Why aren’t you horrified by what’s already in your closet? If you own wool, leather or silk, you’ve contributed to the barbaric practices farmers use to procure these fabrics—practices that would be considered cruel and unusual were they performed on humans. </p>
 							</div>
@@ -343,5 +345,9 @@
 	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="main.js"></script>
+	<script src="wow.min.js"></script>
+    <script>
+     new WOW().init();
+    </script>
 </body>
 </html>
