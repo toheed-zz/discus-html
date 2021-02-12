@@ -6,6 +6,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;600;700&family=Maven+Pro:wght@700&family=Oswald&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
 	<title>Peta-Urban</title>
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="custom.css">
+	<link rel="stylesheet" href="animate.min.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -51,7 +53,7 @@
 				<div class="image bg-stretch">
 					<img src="images/slide1.jpg" alt="image-description">
 				</div>
-				<div class="image-overlay bg-stretch">
+				<div class="image-overlay bg-stretch wow animate__animated animate__fadeIn animate__delay-1s animate__slower">
 					<img src="images/slide2.jpg" alt="image-description">
 				</div>
 			</section>
@@ -60,15 +62,15 @@
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="text-holder">
-								<strong class="title h3">When it comes to ripping <br>the skin off a living thing,</strong>
-								<h1>where do you <br>draw the line?</h1>
+								<strong class="title h3 wow animate__animated animate__fadeIn animate__delay-1s animate__slow">When it comes to ripping <br>the skin off a living thing,</strong>
+								<h1 class="wow animate__animated animate__fadeIn animate__delay-2s animate__slow">where do you <br>draw the line?</h1>
 							</div>
 						</div>
 						<div class="col-lg-6 images-holder">
-							<div class="image">
+							<div class="image swingimage">
 								<img src="images/image1.png" alt="image-description">
 							</div>
-							<div class="image add">
+							<div class="image add swingimage2">
 								<img src="images/image2.png" alt="image-description">
 							</div>
 						</div>
@@ -336,5 +338,9 @@
 	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="main.js"></script>
+	<script src="wow.min.js"></script>
+    <script>
+     new WOW().init();
+    </script>
 </body>
 </html>
