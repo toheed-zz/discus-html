@@ -45,3 +45,7 @@
 .animate__.animate__slideOutLeft {
     visibility: hidden !important;
 }
+.info-section .description {
+    position: sticky;
+    top: 0;
+}
