@@ -10617,7 +10617,6 @@ h3 {
 
 .wrapper {
   position: relative;
-  overflow: hidden;
   width: 100%;
 }
 
@@ -11327,7 +11326,7 @@ h3 {
 }
 
 .header .info .cart {
-  margin-left: 6px;
+  margin-left: 10px;
 }
 
 .header-holder {
