@@ -601,6 +601,26 @@ a {
       display: none;
     }
 
+    .image {
+      @media (max-width: 1365.98px) {
+        height: 100vh;
+      }
+
+      img {
+        @media (max-width: 1365.98px) {
+          height: 100%;
+          width: 191px;
+          display: block;
+        }
+
+        @media (max-height: 668.98px) {
+          height: 100%;
+          width: 125px;
+          display: block;
+        }
+      }
+    }
+
     .holder {
       transform: rotate(90deg);
       transform-origin: 50% 265%;

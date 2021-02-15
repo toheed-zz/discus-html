@@ -11247,6 +11247,28 @@ h3 {
   }
 }
 
+@media (max-width: 1365.98px) {
+  .about-area .urban-text .image {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1365.98px) {
+  .about-area .urban-text .image img {
+    height: 100%;
+    width: 191px;
+    display: block;
+  }
+}
+
+@media (max-height: 668.98px) {
+  .about-area .urban-text .image img {
+    height: 100%;
+    width: 125px;
+    display: block;
+  }
+}
+
 .about-area .urban-text .holder {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
