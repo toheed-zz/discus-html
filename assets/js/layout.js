@@ -38,14 +38,14 @@ function initAnchors() {
 
 // initialize fixed blocks on scroll
 function initStickyScrollBlock() {
-	jQuery('#urban').stickyScrollBlock({
+	jQuery('#urban_text').stickyScrollBlock({
 		setBoxHeight: false,
 		activeClass: 'fixed-position',
-		container: '#about',
+		container: '#about_section',
 		positionType: 'fixed',
 		extraTop: function() {
 			var totalHeight = 0;
-			jQuery('0').each(function() {
+			jQuery('170px').each(function() {
 				totalHeight += jQuery(this).outerHeight();
 			});
 			return totalHeight;
