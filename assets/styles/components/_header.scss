@@ -49,6 +49,7 @@
   position: relative;
   width: 353px;
   margin-top: 52px;
+  margin-left: -31px;
 
   @include media-breakpoint-down(md) {
     width: 240px;

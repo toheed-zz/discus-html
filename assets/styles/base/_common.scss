@@ -63,27 +63,52 @@ a {
 .h1 , h1 {
   line-height: 75px;
 
+  @media (max-width: 1199.98px) {
+    font-size: 55px;
+    line-height: 57px;
+  }
+
   @include media-breakpoint-down(md) {
     font-size: 50px;
     line-height: 52px;
   }
+
+  @media (max-width: 359.98px) {
+    font-size: 40px;
+    line-height: 45px;    
+  }
 }
 
 .h2 , h2 {
-  line-height: 54px;
+  line-height: 58px;
 
-  @include media-breakpoint-down(md) {
+  @media (max-width: 1199.98px) {
     font-size: 32px;
     line-height: 36px;
+  }
+
+  @media (max-width: 359.98px) {
+    font-size: 26px;
+    line-height: 32px;    
   }
 }
 
 .h3 , h3 {
   line-height: 34px;
 
-  @include media-breakpoint-down(md) {
+  @media (max-width: 1199.98px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  @media (max-width: 991.98px) {
     font-size: 20px;
     line-height: 26px;
+  }
+
+  @media (max-width: 359.98px) {
+    font-size: 18px;
+    line-height: 24px;    
   }
 }
 
@@ -168,8 +193,12 @@ a {
   }
 
   &.section02 {
-    height: 1126px;
+    height: 1103px;
     background: #141414;
+
+    @include media-breakpoint-down(sm) {
+      height: 100vh;
+    }
 
     &:before {
       position: absolute;
@@ -192,18 +221,53 @@ a {
         left: -117px;
         top: -160px;
         z-index: 3;
+        
+        @media (max-width: 1199.98px) {
+          left: -50px;
+        }
+
+        @include media-breakpoint-down(sm) {
+          width: 250px;
+          left: -30px;
+        }
+
+        img {
+          @include media-breakpoint-down(sm) {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
+        }
 
         &.add {
           left: auto;
           right: 181px;
           top: -151px;
           z-index: 2;
+
+          @media (max-width: 1199.98px) {
+            right: 50px;
+          }
+
+          @include media-breakpoint-down(sm) {
+            width: 210px;
+            right: 0;
+          }
         }
       }
     }
 
     .text-holder {
       padding: 0 0 142px 34px;
+
+      @include media-breakpoint-down(md) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        padding: 50px 0 0;
+        z-index: 9;
+      }
     }
   }
 
@@ -212,7 +276,13 @@ a {
 
     .text-holder {
       max-width: 530px;
-      padding: 0 0 146px 86px;
+      padding: 0 0 94px 86px;
+
+      @include media-breakpoint-down(md) {
+        padding: 0 15px;
+        max-width: 350px;
+        margin: 0 auto;
+      }
 
       .h2 {
         margin: 0;
@@ -225,7 +295,14 @@ a {
     height: 100vh;
 
     .text-holder {
-      max-width: 438px;
+      max-width: 500px;
+      padding-left: 116px;
+
+      @include media-breakpoint-down(md) {
+        padding: 0 15px;
+        max-width: 350px;
+        margin: 0 auto;
+      }
 
       .h2 {
         margin: 0;
@@ -238,7 +315,14 @@ a {
     height: 100vh;
 
     .text-holder {
-      max-width: 434px;
+      max-width: 520px;
+      padding-left: 110px;
+
+      @include media-breakpoint-down(md) {
+        padding: 0 15px;
+        max-width: 350px;
+        margin: 0 auto;
+      }
 
       .h2 {
         margin: 0;
@@ -255,6 +339,13 @@ a {
     .h2, h2,
     .h1, h1 {
       margin: 0;
+    }
+
+    .h1 {
+      @media (max-width: 1199.98px) {
+        font-size: 50px;
+        line-height: 54px;
+      }
     }
 
     .bar {
@@ -275,8 +366,16 @@ a {
     }
 
     .text-wrap {
-      margin-bottom: 80px;
-      padding-top: 120px;
+      margin-bottom: 122px;
+
+      @media (max-width: 1199.98px) {
+        padding-top: 170px;
+      }
+
+      @include media-breakpoint-down(md) {
+        padding-top: 70px;
+      }
+
 
       .h2 {
         color: #555;
@@ -285,6 +384,11 @@ a {
       .h1 {
         color: #fff;
         margin: 0;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 34px;
+          line-height: 40px;
+        }
       }
 
       &.add {
@@ -293,6 +397,10 @@ a {
 
         .h1 {
           margin: 0 0 35px;
+
+          @media (max-width: 1199.98px) {
+            margin: 0 0 20px;
+          }
         }
       }
 
@@ -300,6 +408,11 @@ a {
         color: #444;
         font-size: 20px;
         line-height: 36px;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 16px;
+          line-height: 24px;
+        }
       }
     }
   }
@@ -313,6 +426,10 @@ a {
   font-size: 14px;
   line-height: 18px;
   color: #000;
+
+  @media (max-width: 1199.98px) {
+    font-size: 12px;
+  }
 
   .close {
     position: absolute;
@@ -329,6 +446,18 @@ a {
     color: #999;
     background: #343434;
     border-radius: 100%;
+
+    @media (max-width: 1199.98px) {
+      right: 20px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      top: 10px;
+    }
+
+    &:hover {
+      color: #fff !important;
+    }
   }
 
   .container {
@@ -341,6 +470,14 @@ a {
     margin-right: 96px;
     margin-left: 27px;
     letter-spacing: 0.8px;
+
+    @media (max-width: 1199.98px) {
+      margin-right: 30px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin: 0 0 30px;
+    }
   }
 
   .h3 {
@@ -360,13 +497,28 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  padding: 540px 0;
+  padding: 529px 0;
   position: relative;
   overflow: hidden;
 
+  @media (max-width: 1199.98px) {
+    padding: 250px 0;
+    min-height: 1900px;
+  }
+
+  @include media-breakpoint-down(md) {
+    min-height: 1600px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    min-height: inherit;
+    padding-bottom: 540px;
+    padding-top: 100px;
+  }
+
   h2 {
     color: #fff;
-    margin: 0 0 20px;
+    margin: 0 0 31px;
   }
 
   .h1 {
@@ -374,8 +526,26 @@ a {
   }
 
   .description {
-    padding-right: 170px;
-    margin: 0 0 280px;
+    padding-right: 26px;
+    margin: 0 0 303px;
+    padding-left: 17px;
+    font-size: 20px;
+    line-height: 37px;
+
+    @media (max-width: 1199.98px) {
+      margin: 0 0 150px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+      line-height: 26px;
+      max-width: 70%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+      margin-bottom: 50px;
+    }
   }
 
   .about_text {
@@ -384,6 +554,19 @@ a {
     color: #999;
     font-size: 20px;
     line-height: 35px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+      line-height: 26px;
+      padding: 0 15px;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 359.98px) {
+      max-width: 100%;
+      font-size: 14px;
+    }
 
     .title {
       display: block;
@@ -395,32 +578,58 @@ a {
       color: #b7111f;
       font-size: 150px;
       line-height: 154px;
-      margin: 0;
+      margin: 0 0 10px;
+
+      @media (max-width: 1199.98px) {
+        font-size: 100px;
+        line-height: 103px;
+      }
+
+      @include media-breakpoint-down(md) {
+        font-size: 60px;
+        line-height: 68px;
+      }
     }
   }
 
   .urban-text {
     position: absolute;
     right: 0;
-    top: 154px;
+    top: 62px;
 
-    span {
-      display: block;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
+    .holder {
       transform: rotate(90deg);
-      transform-origin: 50% 250%;
+      transform-origin: 50% 265%;
       font-size: 565px;
       line-height: 400px;
       color: #fff;
       font-weight: 700;
       letter-spacing: -20px;
       font-family: $maven-font;
+
+      @media (max-width: 1199.98px) {
+        font-size: 300px;
+        line-height: 200px;
+      }
     }
   }
 }
 
 .info-section {
-  padding: 154px 0 236px;
+  padding: 154px 0 184px;
   position: relative;
+
+  @media (max-width: 1199.98px) {
+    padding: 154px 0 50px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0;
+  }
 
   &:before {
     position: absolute;
@@ -437,6 +646,19 @@ a {
   .image-area {
     position: relative;
     text-align: right;
+
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+
+    .holder {
+      position: relative;
+      margin-right: -30px;
+
+      @include media-breakpoint-down(md) {
+        margin: 0;
+      }
+    }
   }
 
   .h2 {
@@ -446,12 +668,20 @@ a {
   .h1 {
     color: #fff;
     margin: 0 0 60px;
+
+    @include media-breakpoint-down(md) {
+      margin: 0 0 30px;
+    }
   }
 
   .image {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+    }
   }
 
   img {
@@ -462,11 +692,21 @@ a {
 
   .description {
     font-size: 20px;
-    line-height: 35px;
-    padding: 120px 0 0 30px;
+    line-height: 37px;
+    padding: 120px 70px 0 58px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+      line-height: 26px;
+      padding: 60px 30px 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 30px 15px 0;
+    }
 
     p {
-      margin: 0 0 30px;
+      margin: 0 0 40px;
 
       &:last-child {
         color: #fff;
@@ -475,14 +715,28 @@ a {
   }
 
   .text-group {
-    padding: 218px 0 0;
+    padding: 209px 0 0;
     text-align: center;
+
+    @media (max-width: 1199.98px) {
+      padding: 100px 0 0;
+    }
 
     h2 {
       color: #fff;
 
+      @include media-breakpoint-down(sm) {
+        font-size: 28px;
+      }
+
       span {
         display: block;
+      }
+    }
+
+    .h1 {
+      @include media-breakpoint-down(sm) {
+        font-size: 36px;
       }
     }
   }
@@ -507,16 +761,32 @@ a {
     right: 0;
     top: 0;
     bottom: 0;
-    padding: 160px 0 0;
+    padding: 148px 0 0;
+
+    @media (max-width: 1199.98px) {
+      padding: 80px 0 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      position: static;
+    }
   }
 
   .holder {
     max-width: 660px;
     margin: 0 auto;
+    font-size: 20px;
+    line-height: 36px;
+
+    @media (max-width: 1199.98px) {
+      font-size: 15px;
+      line-height: 24px;
+      max-width: 100%;
+    }
   }
 
   h2 {
-    margin: 0 0 20px;
+    margin: 0 0 32px;
   }
 
   p {
@@ -524,7 +794,7 @@ a {
   }
 
   .sign-image {
-    padding: 22px 0 0;
+    padding: 7px 0 0;
     width: 188px;
     margin: 0 auto;
 
@@ -539,7 +809,9 @@ a {
     width: 188px;
     margin: -15px auto 0;
     text-align: left;
-    padding-left: 70px;
+    padding-left: 78px;
+    font-size: 12px;
+    line-height: 15px;
 
     .title {
       display: block;
@@ -550,19 +822,44 @@ a {
 .steps-area {
   position: relative;
   background: url('../img/image8.jpg') no-repeat 50% 0 #141414;
-  padding: 350px 0;
+  padding: 340px 0;
+
+  @media (max-width: 1199.98px) {
+    padding: 150px 0;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 150px 0 50px;
+  }
 
   .steps-list {
-    margin: 0 0 200px;
+    margin: 0 0 167px;
     display: flex;
     flex-wrap: wrap;
     font-size: 30px;
     line-height: 33px;
     color: #fff;
     font-family: $philosopher-font;
+    padding-left: 107px;
+
+    @media (max-width: 1199.98px) {
+      font-size: 20px;
+      line-height: 24px;
+      padding-left: 50px;
+      margin: 0 0 50px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 30px;
+      display: block;
+    }
 
     li {
       margin: 0 60px 0 0;
+
+      @include media-breakpoint-down(sm) {
+        margin: 0 0 30px;
+      }
     }
 
     .image {
@@ -571,6 +868,16 @@ a {
       width: 248px;
       height: 151px;
       margin: 0 0 20px;
+
+      @media (max-width: 1199.98px) {
+        width: 150px;
+        height: 100px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        height: 150px;
+      }
     }
   }
 
@@ -578,38 +885,96 @@ a {
     text-align: center;
     margin: 0 0 50px;
     color: #fff;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 26px;
+    }
   }
 
   .image-holder {
     position: relative;
     background: #e2e4e3;
     text-align: center;
-    padding: 20px 79px 75px;
-    margin: 0 0 31px;
+    padding: 24px 79px 75px;
+    margin: 0 -119px 26px 90px;
+
+    @media (max-width: 1199.98px) {
+      margin: 0 0 25px 15px;
+      padding: 25px 40px 40px;
+    }
+
+    @media (max-width: 767.98px) {
+      margin: 0 0 15px;
+    }
 
     img {
       display: block;
       width: 100%;
       height: auto;
     }
+
+    .text {
+      font-size: 14px;
+
+      @media (max-width: 359.98px) {
+        font-size: 11px;
+      }
+    }
   }
 
   .text {
     display: block;
-    margin: 0 0 50px;
+    margin: 0 0 54px;
+
+    @include media-breakpoint-down(sm) {
+      margin: 0 0 30px;
+    }
   }
 
   .holder {
+    padding: 0 90px 0 150px;
+    margin: -16px 0 0;
+    font-size: 14px;
+
+    @media (max-width: 1199.98px) {
+      padding: 0 25px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin: 0;
+      padding: 0 15px;
+    }
+
+    @media (max-width: 359.98px) {
+      padding: 0;
+    }
+
+    br {
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+
     h2 {
       text-align: left;
-      margin: 0 0 15px;
+      margin: 0 0 10px;
+      line-height: 51px;
+      letter-spacing: -1px;
+
+      @media (max-width: 1199.98px) {
+        line-height: 34px;
+      }
+    }
+
+    p {
+      margin: 0 0 22px;
     }
   }
 
   .form-list {
 
     li {
-      margin: 0 0 30px;
+      margin: 0 0 26px;
     }
 
     label {
@@ -675,6 +1040,18 @@ a {
       }
     }
   }
+
+  .social-area {
+    padding-left: 219px;
+
+    @media (max-width: 1199.98px) {
+      padding-left: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .social-area {
@@ -683,8 +1060,17 @@ a {
   justify-content: center;
   color: #fff;
 
+  @media (max-width: 359.98px) {
+     align-items: center; 
+  }
+
   .title {
     color: #999;
+
+    @media (max-width: 359.98px) {
+     font-size: 11px;
+     line-height: 13px;
+    }
   }
 
   .list {
@@ -704,10 +1090,15 @@ a {
         position: absolute;
         left: 0;
         top: 2px;
-        bottom: 2px;
+        bottom: 4px;
         content: '';
         width: 2px;
         background: #fff;
+
+        @media (max-width: 359.98px) {
+          left: -2px;
+          bottom: 2px;
+        }
       }
 
       &:first-child {
@@ -735,6 +1126,10 @@ a {
     .description {
       margin: 0 10px 0 0;
       letter-spacing: 0;
+
+      @media (max-width: 1199.98px) {
+        margin: 0 0 30px;
+      }
     }
 
     .btn-primary {
@@ -749,72 +1144,22 @@ a {
   }
 }
 
-.footer {
-
-  .footer-holder {
-    background: url('../../img/bg-footer.png') no-repeat;
-    background-size: cover;
-    padding: 130px 0 140px;
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo-holder {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .logo-peta {
-    width: 126px;
-
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  .logo-urban {
-    margin: 0 0 0 25px;
-    width: 285px;
-  }
-
-  .copyrights {
-    text-align: center;
-    font-size: 12px;
-    line-height: 24px;
-    padding: 30px 0;
-    color: #444;
-    border-top: 1px solid #333;
-
-    p {
-      margin: 0;
-    }
-
-    a {
-      color: #444;
-
-      &:hover {
-        color: #fff;
-      }
-    }
-  }
-}
-
 .radio-holder {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -10px;
 
+  @include media-breakpoint-down(sm) {
+    margin: 0 -5px;
+  }
+
   label {
     display: block;
     margin: 0 10px;
+
+    @include media-breakpoint-down(sm) {
+      margin: 0 5px;
+    }
   }
 
   .label-text {
