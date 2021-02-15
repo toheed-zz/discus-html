@@ -15,6 +15,24 @@ $(window).scroll(function(){
     }
 });
 
+/*
+var sticky2 = $('.about-area').offset().top;
+$(window).scroll(function(){    
+    if ($(this).scrollTop() - 150 > sticky2){ 
+        $('.urban-text').addClass('fixed');
+    }
+    else{
+        $('.urban-text').removeClass('fixed');
+    }
+});
+
+var removesticky2 = $('.info-section').offset().top;
+$(window).scroll(function(){    
+    if ($(this).scrollTop() - 100 > removesticky2){ 
+        $('.urban-text').removeClass('fixed');
+    }
+});*/
+
 jQuery(function() {
 	initAnchors();
 });
@@ -317,3 +335,5 @@ function initAnchors() {
 	// export module
 	exports.SmoothScroll = SmoothScroll;
 }(jQuery, this));
+
+
