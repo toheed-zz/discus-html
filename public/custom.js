@@ -35,6 +35,7 @@ $(window).scroll(function(){
 
 jQuery(function() {
 	initAnchors();
+	
 });
 
 // initialize smooth anchor links
