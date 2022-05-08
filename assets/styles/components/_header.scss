@@ -1,135 +1,73 @@
 /** @define header **/
 /* stylelint-disable */
 .header {
-  padding: 11px 0 0;
+  padding: 56px 0;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   z-index: 999;
 
-  .info {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 12px;
-
-    @include media-breakpoint-down(md) {
-      position: absolute;
-      right: 0;
-      top: 3px;
-    }
-
-    a {
-      color: #fff;
-
-      &:hover {
-        color: #beb9b9;
-      }
-    }
-
-    .cart {
-      margin-left: 15px;
-    }
+  .container {
+    position: relative;
   }
 }
 
-.header-holder {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 0 61px;
-
-  @include media-breakpoint-down(md) {
-    justify-content: center;
+body:not(.home) {
+  .logo {
+    display: block;
   }
 }
-
-.logo-urban {
-  position: relative;
-  width: 353px;
-  margin-top: 52px;
-  margin-left: -31px;
-
-  @include media-breakpoint-down(md) {
-    width: 240px;
-    margin-top: 40px;
-  }
-
-  img {
-    @include img-style;
-  }
-}
-
-
 
 .logo {
-  display: block;
-  width: 118px;
+  display: none;
+  width: 251px;
+  position: absolute;
+  left: 50%;
+  margin-left: -125px;
+  top: -10px;
 
   @include media-breakpoint-down(md) {
-    display: none;
+    width: 145px;
   }
-  
+
   a {
     display: block;
   }
+
   img {
     @include img-style;
   }
 }
 
-.lang-holder {
-  .lang-opener {
-    display: block;
-    position: relative;
-    padding-right: 15px;
+.btn-info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+  line-height: 27px;
+  border: 1px solid #fff;
+  padding: 5px 20px;
+  font-family: $khand-font;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 0;
+  background: none;
+  color: $white;
 
-    &:before {
-      position: absolute;
-      right: 0;
-      top: -3px;
-      font-family: 'icomoon' !important;
-      content: "\e902";
-      font-size: 22px;
-      line-height: 1;
-      transition: all 0.4s ease;
-    }
+  &:hover,
+  &:focus {
+    background: $yellow;
+    border-color: $yellow;
+    color: $black;
+    outline: none !important;
+    box-shadow: none !important;
   }
 
-  &.active {
-    .lang-opener {
-      &:before {
-        transform: rotate(-180deg);
-      }
-    }
-  }
-
-  .slide {
-    position: absolute;
-    right: 25px;
-    width: 200px;
-    background: #141414;
-    top: 30px;
-  }
-
-  .lang-list {
-    padding: 0;
-    font-size: 12px;
-    line-height: 20px;
-    margin: 0;
-
-    li {
-      border-bottom: 1px solid #000;
-    }
-
-    a {
-      display: block;
-      padding: 10px 25px;
-
-      &:hover {
-        background: #444;
-      }
-    }
-  }
+  .icon {
+    font-size: 16px;
+    line-height: 1;
+    display: inline-block;
+    margin-right: 1px;
+  }  
 }

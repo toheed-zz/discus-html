@@ -1,7 +1,7 @@
 // custom variables and override bootstrap variables
-$gray: #656565;
+$gray: #999;
 $white: #fff;
-$black: #000;
+$black: #161515;
 $gray2: #f6f6f6;
 $gray3: #363636;
 $base-min-width: 320px;
@@ -15,29 +15,27 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1460px
+  xl: 1176px
 );
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1440px
+  xl: 1176px
 );
 
 
-$blue: #0152aa;
+$yellow: #f5d300;
 
 
 $arial-font: 'Arial', 'Helvetica', sans-serif;
-$kufam-font: 'Kufam', cursive;
-$oswald-font: 'Oswald', $arial-font;
-$roboto-font: 'Roboto', $arial-font;
-$maven-font: 'Maven Pro', $arial-font;
-$philosopher-font: 'Philosopher', $arial-font;
+$palanquin-font: 'palanquin', $arial-font;
+$khand-font: 'khand', $arial-font;
 $link-hover-decoration: none;
-$font-family-base: $kufam-font;
-$headings-font-family: $philosopher-font;
-$headings-font-weight: 400;
-$h1-font-size: 75px;
-$h2-font-size: 50px;
+$font-family-base: $palanquin-font;
+$btn-transition: all 0.4s ease;
+$headings-font-family: $khand-font;
+$headings-font-weight: 700;
+$h1-font-size: 71px;
+$h2-font-size: 40px;
 $h3-font-size: 30px;

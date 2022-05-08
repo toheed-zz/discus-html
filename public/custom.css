@@ -1,60 +1,67 @@
-.swingimage{
-    -webkit-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
-    animation: swinging 3.5s ease-in-out forwards infinite;
+.stories-visual {
+  max-width: 2200px;
+  margin: 0 auto;
 }
-@-webkit-keyframes swinging{
-    0%{-webkit-transform: rotate(5deg);}
-    50%{-webkit-transform: rotate(-3deg)}
-    100%{-webkit-transform: rotate(5deg);}
+.breadcrumb {
+  background: none;
+  margin: 38px 0 94px;
+  padding: 0;
 }
- 
-@keyframes swinging{
-    0%{transform: rotate(5deg);}
-    50%{transform: rotate(-3deg)}
-    100%{transform: rotate(5deg);}
+.breadcrumb li {
+  padding-right: 14px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 300;
 }
-
-.swingimage2 {
-    -webkit-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    -webkit-animation: swinging2 4s ease-in-out forwards infinite;
-    animation: swinging2 4s ease-in-out forwards infinite;
+.breadcrumb li:before {
+  content: '/';
+  position: absolute;
+  left: -10px;
+  top: 0;
 }
-@-webkit-keyframes swinging2{
-    0%{-webkit-transform: rotate(5deg);}
-    50%{-webkit-transform: rotate(-3deg)}
-    100%{-webkit-transform: rotate(5deg);}
+.breadcrumb li:first-child:before {
+  display: none;
 }
- 
-@keyframes swinging2{
-    0%{transform: rotate(5deg);}
-    50%{transform: rotate(-3deg)}
-    100%{transform: rotate(5deg);}
+.breadcrumb li a {
+  font-weight: 500;
 }
-.banner-section.section06 .text-wrap {
-    margin-bottom: 20px;
+.align-center {
+  margin: 0 auto;
+  text-align: center;
 }
-.animate__.animate__slideOutLeft {
-    visibility: hidden !important;
+.stories-header h1 {
+  padding: 0 0 50px;
+  margin: 0 0 50px;
+  position: relative;
+  line-height: 32px;
+  letter-spacing: 5px;
 }
-.info-section .description {
-    position: sticky;
-    top: 60px;
-
-    @media (max-width: 767.98px) {
-        position: static;
-    }
+.stories-header h1:before {
+  content: '';
+  width: 82px;
+  height: 2px;
+  max-width: 96%;
+  background: #f9d600;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
 }
-.cta1 {
-    visibility: hidden;
-    position: absolute;
+.stories-content p {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 300;
 }
-.cta1.fixed {
-    position: fixed;
-    top: 0;
-    z-index: 99;
-    width: 100%;
-    visibility: visible;
+.story-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 85px 0;
+}
+.story-img img {
+  box-shadow: 0px 9px 9px rgba(0,0,0,0.5)
+}
+.align-left {
+  text-align: left;
 }

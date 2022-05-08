@@ -1,19 +1,15 @@
 /** @define nav-opener **/
 /* stylelint-disable */
 .menu-opener {
-  @include size(26px, 16px);
+  @include size(31px, 16px);
   transition: all 0.4s ease;
   border-radius: 3px;
   background: none;
   position: absolute;
-  left: 10px;
-  top: 5px;
+  left: 15px;
+  top: 16px;
   z-index: 20;
   display: none;
-
-  @include media-breakpoint-down(md) {
-    display: block;
-  }
 
   .menu-active & {
     border-top: 0;
@@ -22,7 +18,7 @@
   span {
     display: block;
     &:before {
-      @include size(26px, 2px);
+      @include size(31px, 2px);
       background: $white;
       transition: all 0.4s ease;
       content: '';
@@ -39,7 +35,7 @@
 
   &:after,
   &:before {
-    @include size(26px, 2px);
+    @include size(31px, 2px);
     background: $white;
     transition: all 0.4s ease;
     content: '';
@@ -64,14 +60,12 @@
 /** @define nav-drop **/
 .nav-drop {
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     transition: all 0.4s ease;
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 100%;
     left: 0;
-    width: 280px;
-    height: 100vh;
+    width: 100%;
     overflow: hidden;
     padding: 0;
     max-height: 0;
@@ -86,84 +80,74 @@
 
 /** @define nav-area **/
 .nav-area {
-  @include media-breakpoint-down(md) {
-   background: #222;
+  @include media-breakpoint-down(sm) {
+   background: #1a5b98;
    position: relative;
    transition: all 0.4s ease;
-   transform: translateX(-100%);
+   transform: translateY(-100%);
    text-align: center;
 
    .menu-active & {
-      transform: translateX(0);
+      transform: translateY(0);
     }
-  }
-
-  .menu-opener {
-    left: 240px;
   }
 }
 
-
 .menu {
-  margin: 0 -15px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  font-family: $roboto-font;
-  font-size: 12px;
-  line-height: 15px;
-
-  @include media-breakpoint-down(md) {
-    height: 100vh;
-    display: block;
-    font-size: 14px;
-    line-height: 24px;
-    padding-top: 70px;
-  }
+  margin: 0 -21px;
+  padding: 0 140px 0 0;
+  font-size: 20px;
+  line-height: 27px;
+  font-family: $khand-font;
+  font-weight: 300;
+  text-transform: uppercase;
 
   li {
-    padding: 0 15px;
+    padding: 0 3px;
 
-    @include media-breakpoint-down(md) {
-      border-bottom: 1px solid #000;
+    &:nth-child(3) {
+      padding-right: 55%;
+    }
+
+    &.active {
+      a {
+        background: $yellow;
+        color: $black;
+
+        &:before {
+          display: none;
+        }
+      }
     }
   }
 
   a {
     color: #fff;
     display: block;
+    padding: 5px 18px;
     position: relative;
-
-    @include media-breakpoint-down(md) {
-      display: block;
-      padding: 10px 0;
-    }
 
     &:before {
       position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      content: '';
+      background: $yellow;
+      width: 0;
       left: 50%;
       right: 50%;
-      bottom: -11px;
-      height: 1px;
-      width: 0;
-      content: '';
-      background: #fff;
       transition: all 0.4s ease;
-
-      @include media-breakpoint-down(md) {
-        display: none;
-      }
     }
 
     &:hover {
-      @include media-breakpoint-down(md) {
-        background: #000;
-      }
-      
       &:before {
+        width: auto;
         left: 0;
         right: 0;
-        width: 100%;
       }
     }
   }
