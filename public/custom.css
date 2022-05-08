@@ -66,3 +66,31 @@
 .align-left {
   text-align: left;
 }
+.stories-content-holder p {
+  font-style: 22px;
+  line-height: 35px;
+}
+.highligted-text {
+  margin: 102px 0;
+  font-size: 75px;
+  line-height: 72px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'khand';
+}
+.highligted-text span {
+  background: #161515;
+  color: #fff;
+  padding: 2px 8px;
+}
+.back-stories {
+  margin: 85px 0 90px;
+  padding-left: 40px;
+}
+.back-stories a {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+
+}
