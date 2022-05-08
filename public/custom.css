@@ -30,12 +30,13 @@
   text-align: center;
 }
 .stories-header h1 {
-  padding: 0 0 50px;
   margin: 0 0 50px;
   position: relative;
-  line-height: 32px;
-  letter-spacing: 5px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  padding: 0 0 20px;
 }
+
 .stories-header h1:before {
   content: '';
   width: 82px;

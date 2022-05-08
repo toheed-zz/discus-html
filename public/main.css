@@ -11368,6 +11368,16 @@ body:not(.home) .logo {
 
 /* stylelint-disable */
 
+.stories-header h1 {
+  line-height: 1;
+}
+
+.stories-content-holder {
+  padding: 0 83px;
+}
+
+/* stylelint-disable */
+
 .slick-slider {
   position: relative;
   -webkit-user-select: none;
