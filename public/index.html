@@ -8,6 +8,12 @@
 	<link rel="stylesheet" href="custom.css">
 </head>
 <body class="home">
+	<!-- Age Gate trigger modal remove this when actual functionality is added -->
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#agegate" style="position: absolute; z-index: 9999999; left: 0; top: 0">
+	  Launch Age Gate
+	</button>
+
+
 	<div class="wrapper">
 		<section class="top-section">
 			<header class="header">
@@ -707,9 +713,47 @@
 
 
 
+
+
+	
+	<!-- Age Gate Modal -->
+	<div class="modal fade" id="agegate" tabindex="-1" role="dialog" aria-labelledby="agegateLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      	<div class="welcome">
+		      <img src="images/welcome.jpg" align="Welcome">
+		    </div>
+		    <h2>You must be 21 to enter this website.</h2>
+		    <p>Please enter your date of birth.</p>
+		    <form>
+		    	<div class="form-body">
+			    	<input type="text" placeholder="MM">
+			    	<input type="text" placeholder="DD">
+			    	<input type="text" placeholder="YYYY">
+		    	</div>
+		    	<div class="form-footer">
+		    		<input type="submit" value="Enter">
+		    	</div>
+		    </form>
+		    <img src="images/logo_white.svg" width="171">
+		    <p class="modal-copy">By entering this site, you are agreeing to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>. <br>Please do not share or forward to anyone underage.<br>
+		    &copy; 2022. All rights reserved.</p>
+	      </div>
+	  </div>
+	</div>
+
+
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="main.js"></script>
 	<script src="map-config.js"></script>
   	<script src="map-interact.js"></script>
+  	<script src="lettering.js"></script>
+  	<script type="text/javascript">
+		$(function() {
+			$(".welcome h1").lettering();
+		});
+	</script>
+
 </body>
 </html>
