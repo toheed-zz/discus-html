@@ -161,3 +161,102 @@
     margin-top: 50px;
   }
 }
+#mapwrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#mapwrapper path {
+  cursor: pointer;
+  fill: #f9d600;
+}
+#mapwrapper path:hover {
+  fill: #161515;
+}
+#mapwrapper path g,
+#mapwrapper svg g text {
+  font-size: 14px;
+  color: red;
+}
+#visnames text {
+  fill: #fff;
+  pointer-events: none
+}
+#mymodal .modal-header {
+  padding: 0;
+  background: none;
+  border: none;
+}
+#mymodal .modal-content {
+  background: none;
+}
+.modal-backdrop.show {
+  opacity: 0;
+}
+#mymodal .modal-content {
+  border: none
+}
+#mymodal .modal-header .close {
+  padding: 0;
+  width: 30px;
+  height: 32px;
+  border: 3px solid #fff;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  font-weight: bold;
+  margin-right: -30px;
+  margin-top: -25px;
+}
+#mymodal .modal-header .close span {
+  position: relative;
+  top: -7px;
+}
+#mymodal .modal-body,
+#mymodal .modal-dialog {
+  max-width: 634px;
+  width: 100%;
+  padding: 0;
+}
+.map-modal-wrap {
+  display: flex;
+}
+.map-modal-left {
+  width: 47%
+}
+.map-modal-right {
+  width: 53%
+}
+.map-modal-left .map-modal-content,
+.map-modal-right .map-modal-content {
+  border: 2px solid #fff;
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  font-style: 19px;
+  line-height: 26px;
+  padding: 20px;
+  color: #fff;
+  font-weight: 300
+}
+.map-modal-content h3 {
+  font-family: 'jomhuriaregular';
+  font-weight: bold;
+  font-size: 70px;
+  text-transform: uppercase;
+  line-height: 42px;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+.map-modal-left .map-modal-content strong,
+.map-modal-right .map-modal-content strong {
+  font-family: 'khand';
+  font-weight: bold;
+  font-size: 25px;
+  display: block;
+  text-transform: uppercase;
+}
+.map-modal-right p {
+  text-align: left;
+}
+.map-modal-right p strong {
+  margin-top: 10px;
+  display: block;
+}
