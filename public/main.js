@@ -131,7 +131,7 @@ function initSlickCarousel() {
 	jQuery('.dist_items-slider2').slick({
 		slidesToScroll: 1,
 		rows: 0,
-		slidesToShow: 3,
+		slidesToShow: 2,
 		prevArrow: '<button class="slick-prev"><span class="icon-arrow-big"></span></button>',
 		nextArrow: '<button class="slick-next"><span class="icon-arrow-big"></span></button>',
 		responsive: [{
