@@ -13,6 +13,12 @@ function initMobileNav() {
 		hideOnClickOutside: true,
 		menuDrop: '.nav-drop'
 	});
+	jQuery('body').mobileNav({
+		menuActiveClass: 'explore-active',
+		menuOpener: '.explore-opener, .explore-close',
+		hideOnClickOutside: true,
+		menuDrop: '.explore-area'
+	});
 }
 
 // background video init

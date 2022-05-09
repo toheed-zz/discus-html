@@ -55,7 +55,8 @@ a {
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     background: #f2e8c9;
     border-color: #f2e8c9;
     color: $black;
@@ -165,7 +166,7 @@ a {
   left: 50%;
   margin-left: -376px;
   top: 156px;
-  z-index: 9999;
+  z-index: 999;
   width: 752px;
 
   @include media-breakpoint-down(sm) {
@@ -1258,4 +1259,103 @@ a {
       }
     }
   }
+}
+
+.explore-area {
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  max-height: 0;
+  opacity: 1;
+  visibility: visible;
+
+  .explore-active & {
+    max-height: 4000px;
+  }
+
+  .container {
+    padding-top: 64px;
+    padding-bottom: 82px;
+    position: relative;
+  }
+
+  .explore-close {
+    position: absolute;
+    right: 15px;
+    top: 53px;
+    font-size: 40px;
+    line-height: 1;
+
+    &:hover {
+      opacity: 0.7;
+      color: $black;
+    }
+  }
+
+  .explore-form {
+    max-width: 536px;
+    margin: 0 auto;
+
+    input[type=text] {
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid $yellow;
+      height: 64px;
+      text-align: center;
+      font-size: 44px;
+      line-height: 47px;
+      background: none;
+      padding: 15px;
+      outline: none;
+      color: $black;
+      font-weight: 600;
+      font-family: $khand-font;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  }
+
+  .field-holder {
+    width: 100%;
+    margin: 0 0 57px;
+  }
+
+  .btn-holder {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .text {
+      display: block;
+      padding: 0 10px;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .btn-primary {
+      font-size: 25px;
+      height: 51px;
+      line-height: 38px;
+      padding: 10px 20px;
+    }
+  }
+}
+
+.explore-area-w2 {
+   background: url('../../img/bg-explore.jpg') no-repeat;
+    background-size: cover;
+   position: relative;
+   transition: all 0.4s ease;
+   transform: translateY(-100%);
+   text-align: center;
+
+   .explore-active & {
+      transform: translateY(0);
+    }
 }
