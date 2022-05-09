@@ -42,7 +42,7 @@ body:not(.home) {
   position: absolute;
   left: 50%;
   margin-left: -125px;
-  top: 0;
+  top: -10px;
 
    @include media-breakpoint-down(lg) {
     width: 200px;
