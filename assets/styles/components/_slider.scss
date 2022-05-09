@@ -205,20 +205,14 @@
   padding: 2px 8px;
 }
 .back-stories {
-  margin: 85px 0 90px;
+  margin: 73px 0 90px;
   padding-left: 40px;
 }
-.back-stories a {
-  font-family: 'palanquin';
-  font-weight: 600;
-  font-size: 20px;
-  text-transform: uppercase;
 
-}
 
 @media (max-width: 992px) {
   .breadcrumb {
-    margin: 30px 0 50px;
+    margin: 30px 0 20px;
   }
   .stories-header h1 {
     margin: 0 0 30px;

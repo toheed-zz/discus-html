@@ -122,6 +122,12 @@ a {
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: 3px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 50px;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
 }
 
 .top-section {
@@ -500,6 +506,10 @@ a {
 
   &.style01 {
     padding-bottom: 157px;
+
+    .bg-text {
+      top: 530px;
+    }
   }
 
   .bg-text {
@@ -1292,6 +1302,10 @@ a {
     padding-top: 64px;
     padding-bottom: 82px;
     position: relative;
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 40px;
+    }
   }
 
   .explore-close {
@@ -1300,6 +1314,10 @@ a {
     top: 53px;
     font-size: 40px;
     line-height: 1;
+
+    @include media-breakpoint-down(sm) {
+      top: 30px;
+    }
 
     &:hover {
       opacity: 0.7;
@@ -1341,12 +1359,21 @@ a {
     align-items: center;
     justify-content: space-between;
 
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+
     .text {
       display: block;
       padding: 0 10px;
       text-transform: uppercase;
       font-size: 20px;
       line-height: 1;
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        padding: 10px 0;
+      }
     }
 
     .btn-primary {

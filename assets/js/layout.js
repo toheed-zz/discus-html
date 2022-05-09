@@ -58,6 +58,33 @@ function initSlickCarousel() {
 		}]
 	});
 
+	jQuery('.dist_items-slider2').slick({
+		slidesToScroll: 1,
+		rows: 0,
+		slidesToShow: 2,
+		prevArrow: '<button class="slick-prev"><span class="icon-arrow-big"></span></button>',
+		nextArrow: '<button class="slick-next"><span class="icon-arrow-big"></span></button>',
+		responsive: [{
+			breakpoint: 1150,
+			settings: {
+				slidesToScroll: 1,
+				slidesToShow: 2
+			}
+		}, {
+			breakpoint: 900,
+			settings: {
+				slidesToScroll: 1,
+				slidesToShow: 2
+			}
+		}, {
+			breakpoint: 768,
+			settings: {
+				slidesToScroll: 1,
+				slidesToShow: 1
+			}
+		}]
+	});
+
 	jQuery('.stories-slider').slick({
 		slidesToScroll: 1,
 		rows: 0,

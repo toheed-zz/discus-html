@@ -7,7 +7,7 @@
   background: none;
   position: absolute;
   left: 15px;
-  top: 16px;
+  top: 19px;
   z-index: 20;
   display: none;
 
@@ -84,12 +84,25 @@
 
 /** @define nav-area **/
 .nav-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 152px;
+
+  @include media-breakpoint-down(lg) {
+    padding-right: 143px;
+  }
+  @include media-breakpoint-down(md) {
+    padding-right: 110px;
+  }
+
   @include media-breakpoint-down(sm) {
-   background: #1a5b98;
+    display: block;
+   background: $yellow;
+   padding: 0;
    position: relative;
    transition: all 0.4s ease;
    transform: translateY(-100%);
-   text-align: center;
 
    .menu-active & {
       transform: translateY(0);
@@ -101,7 +114,6 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 -21px;
-  padding: 0 152px 0 0;
   font-size: 20px;
   line-height: 27px;
   font-family: $khand-font;
@@ -112,24 +124,31 @@
     margin: 0 -15px;
   }
 
+  @include media-breakpoint-down(sm) {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
   li {
     padding: 0 3px;
 
-    &:nth-child(3) {
-      padding-right: 53.2%;
-
-      @include media-breakpoint-down(lg) {
-        padding-right: 44%;
-      }
-      @include media-breakpoint-down(md) {
-        padding-right: 36%;
-      }
+    @include media-breakpoint-down(sm) {
+      border-bottom: 1px solid $black;
+      padding: 0;
     }
 
     &.active {
       a {
         background: $yellow;
         color: $black;
+
+        @include media-breakpoint-down(sm) {
+          background: $black;
+          color: $white;
+        }
 
         &:before {
           display: none;
@@ -148,6 +167,11 @@
       padding: 5px 10px;
     }
 
+    @include media-breakpoint-down(sm) {
+      padding: 10px 30px;
+      color: $black;
+    }
+
     &:before {
       position: absolute;
       left: 0;
@@ -163,6 +187,10 @@
     }
 
     &:hover {
+      @include media-breakpoint-down(sm) {
+        background: $black;
+        color: $white;
+      }
       &:before {
         width: auto;
         left: 0;

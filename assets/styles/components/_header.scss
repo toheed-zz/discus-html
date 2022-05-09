@@ -9,8 +9,12 @@
   z-index: 9999;
   transition: all 0.4s ease;
 
+  @include media-breakpoint-down(md) {
+    padding: 22px 0;
+  }
+
   @include media-breakpoint-down(sm) {
-    padding: 20px 0;
+    padding: 10px 0 0;
   }
 
   .explore-active & {
@@ -19,6 +23,10 @@
 
   .container {
     position: relative;
+
+    @include media-breakpoint-down(sm) {
+      min-height: 60px;
+    }
   }
 }
 
@@ -34,10 +42,21 @@ body:not(.home) {
   position: absolute;
   left: 50%;
   margin-left: -125px;
-  top: -10px;
+  top: 0;
+
+   @include media-breakpoint-down(lg) {
+    width: 200px;
+  }
 
   @include media-breakpoint-down(md) {
     width: 145px;
+    margin-left: -72px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 140px;
+    margin-left: -70px;
+    top: 10px;
   }
 
   a {
@@ -64,8 +83,16 @@ body:not(.home) {
   background: none;
   color: $white;
 
+  @include media-breakpoint-down(md) {
+    font-size: 16px;
+    padding: 5px 15px;
+  }
+
   @include media-breakpoint-down(sm) {
-    padding: 5px 10px;  
+    padding: 5px 10px; 
+    font-size: 0;
+    border: none;
+    top: 8px;
   }
 
   &:hover,
@@ -76,6 +103,11 @@ body:not(.home) {
     color: $black;
     outline: none !important;
     box-shadow: none !important;
+
+    @include media-breakpoint-down(sm) {
+      background: none !important;
+      color: $yellow;
+    }
   }
 
   .icon {
@@ -83,5 +115,13 @@ body:not(.home) {
     line-height: 1;
     display: inline-block;
     margin-right: 1px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 13px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 20px;
+    }
   }  
 }

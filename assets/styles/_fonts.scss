@@ -22,6 +22,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-long:before {
+  content: "\e908";
+}
 .icon-chevron-right-light:before {
   content: "\e900";
 }
