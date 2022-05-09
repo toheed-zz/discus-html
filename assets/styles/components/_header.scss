@@ -1,12 +1,16 @@
 /** @define header **/
 /* stylelint-disable */
 .header {
-  padding: 56px 0;
+  padding: 48px 0;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   z-index: 999;
+
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0;
+  }
 
   .container {
     position: relative;
@@ -42,7 +46,7 @@ body:not(.home) {
 
 .btn-info {
   position: absolute;
-  right: 0;
+  right: 15px;
   top: 0;
   font-size: 20px;
   line-height: 27px;
@@ -54,6 +58,10 @@ body:not(.home) {
   border-radius: 0;
   background: none;
   color: $white;
+
+  @include media-breakpoint-down(sm) {
+    padding: 5px 10px;
+  }
 
   &:hover,
   &:focus {

@@ -76,53 +76,42 @@
 }
 
 .slick-dots {
-	position: relative;
-	left: 12px;
-	bottom: 140px;
-	list-style: none;
 	display: flex;
-	flex-wrap: wrap;
-	padding: 0;
-	margin: 0;
-	width: 1170px;
-	margin: 0 auto;
-	@include media-breakpoint-down(lg) {
-		bottom: 70px;
-		left: 15px;
-		max-width: 960px;
-	}
-	@include media-breakpoint-down(md) {
-		bottom: 50px;
-		max-width: 720px;
-	}
-	@include media-breakpoint-down(sm) {
-		max-width: 100%;
-	}
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 0;
+
+  @include media-breakpoint-down(sm) {
+    margin: 10px 0 0;
+  }
+
 	li {
 		position: relative;
 		padding: 0 19px 0 0;
 		&.slick-active {
 			button {
-				background: #919089;
+				background: $black;
 			}
 		}
 	}
 	button {
 		@include fontsize(0, 0);
-		@include size(12px, 12px);
+		@include size(20px, 20px);
 		cursor: pointer;
 		transition: all 0.4s ease;
 		border: none;
 		background: #c0c0c0;
 		outline: none;
-		border-radius: 50%;
 		border: none;
 		padding: 0;
-		@include media-breakpoint-down(sm) {
-			@include size(7px, 7px);
-		}
+    border: 2px solid $black;
+    background: none;
+
+		
 		&:hover {
-			background: #919089;
+			background: $black;
 		}
 	}
 }

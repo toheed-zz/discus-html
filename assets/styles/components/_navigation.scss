@@ -1,7 +1,7 @@
 /** @define nav-opener **/
 /* stylelint-disable */
 .menu-opener {
-  @include size(31px, 16px);
+  @include size(26px, 26px);
   transition: all 0.4s ease;
   border-radius: 3px;
   background: none;
@@ -11,6 +11,10 @@
   z-index: 20;
   display: none;
 
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+
   .menu-active & {
     border-top: 0;
   }
@@ -18,7 +22,7 @@
   span {
     display: block;
     &:before {
-      @include size(31px, 2px);
+      @include size(26px, 2px);
       background: $white;
       transition: all 0.4s ease;
       content: '';
@@ -35,7 +39,7 @@
 
   &:after,
   &:before {
-    @include size(31px, 2px);
+    @include size(26px, 2px);
     background: $white;
     transition: all 0.4s ease;
     content: '';
@@ -97,18 +101,29 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 -21px;
-  padding: 0 140px 0 0;
+  padding: 0 152px 0 0;
   font-size: 20px;
   line-height: 27px;
   font-family: $khand-font;
   font-weight: 300;
   text-transform: uppercase;
 
+  @include media-breakpoint-down(md) {
+    margin: 0 -15px;
+  }
+
   li {
     padding: 0 3px;
 
     &:nth-child(3) {
-      padding-right: 55%;
+      padding-right: 53.2%;
+
+      @include media-breakpoint-down(lg) {
+        padding-right: 44%;
+      }
+      @include media-breakpoint-down(md) {
+        padding-right: 36%;
+      }
     }
 
     &.active {
@@ -128,6 +143,10 @@
     display: block;
     padding: 5px 18px;
     position: relative;
+
+    @include media-breakpoint-down(md) {
+      padding: 5px 10px;
+    }
 
     &:before {
       position: absolute;
