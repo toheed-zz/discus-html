@@ -11073,6 +11073,13 @@ h1 {
   font-weight: 300;
 }
 
+@media (max-width: 767.98px) {
+  .heading-style2 {
+    font-size: 32px;
+    line-height: 60px;
+  }
+}
+
 .heading-style2 .title {
   display: inline-block;
   vertical-align: top;
@@ -11200,6 +11207,12 @@ h1 {
 
 .products-area.style01 {
   padding-bottom: 157px;
+}
+
+@media (max-width: 991.98px) {
+  .products-area.style01 {
+    padding-bottom: 50px;
+  }
 }
 
 .products-area.style01 .bg-text {
@@ -12725,11 +12738,30 @@ body:not(.home) .logo {
   padding: 0 30px 88px;
 }
 
+@media (max-width: 767.98px) {
+  .store-filter {
+    padding: 0 0 20px;
+  }
+}
+
 .store-filter form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 -5px;
+}
+
+@media (max-width: 991.98px) {
+  .store-filter form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .store-filter form {
+    margin: 0;
+  }
 }
 
 .store-filter form input[type=text] {
@@ -12754,8 +12786,26 @@ body:not(.home) .logo {
   padding: 0 5px;
 }
 
+@media (max-width: 991.98px) {
+  .store-filter .field-holder {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .store-filter .field-holder {
+    width: 100%;
+  }
+}
+
 .store-filter .field-holder.text-field {
   width: 213px;
+}
+
+@media (max-width: 767.98px) {
+  .store-filter .field-holder.text-field {
+    width: 100%;
+  }
 }
 
 .store-filter .field-holder.select-holder {
@@ -12764,6 +12814,13 @@ body:not(.home) .logo {
           flex-grow: 1;
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
+}
+
+@media (max-width: 767.98px) {
+  .store-filter .field-holder.select-holder {
+    -ms-flex-preferred-size: inherit;
+        flex-basis: inherit;
+  }
 }
 
 .store-filter .btn-primary {
@@ -13185,13 +13242,19 @@ body:not(.home) .logo {
   background: #161515;
 }
 
+@media (max-width: 991.98px) {
+  .trails-blocks .image-box {
+    margin-bottom: 30px;
+  }
+}
+
 .trails-blocks .image-box .image {
   width: 60%;
   border: 1px solid #fff;
 }
 
 .trails-blocks .image-box .image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -13241,6 +13304,15 @@ body:not(.home) .logo {
   pointer-events: none;
 }
 
+@media (max-width: 767.98px) {
+  .trails-blocks .image-box .counter-box .box:before {
+    left: 5px;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+  }
+}
+
 .trails-blocks .image-box .counter-box .box .count {
   display: block;
   font-size: 54px;
@@ -13249,10 +13321,30 @@ body:not(.home) .logo {
   font-weight: 700;
 }
 
+@media (max-width: 767.98px) {
+  .trails-blocks .image-box .counter-box .box .count {
+    font-size: 40px;
+    line-height: 26px;
+  }
+}
+
 .trails-blocks .image-box .counter-box .box .text {
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
+}
+
+@media (max-width: 991.98px) {
+  .trails-blocks .image-box .counter-box .box .text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .trails-blocks .image-box .counter-box .box .text {
+    font-size: 13px;
+    line-height: 15px;
+  }
 }
 
 .trails-blocks .image-box.style01 .counter-box {
@@ -13284,10 +13376,23 @@ body:not(.home) .logo {
   height: 137px;
 }
 
+@media (max-width: 767.99px) {
+  .trails-blocks .image-box.style01 .box {
+    height: 100px;
+  }
+}
+
 .trails-blocks .row {
   padding-top: 50px;
   padding-bottom: 50px;
   position: relative;
+}
+
+@media (max-width: 767.98px) {
+  .trails-blocks .row {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .trails-blocks .row:before {
@@ -13410,19 +13515,7 @@ body:not(.home) .logo {
 
 .dist_items-slider2 {
   text-align: center;
-  padding: 0 70px 0 85px;
-}
-
-@media (max-width: 1175.98px) {
-  .dist_items-slider2 {
-    padding: 0 100px 0 0;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .dist_items-slider2 {
-    padding: 0;
-  }
+  padding: 0;
 }
 
 .dist_items-slider2 .slick-prev {
@@ -13442,7 +13535,7 @@ body:not(.home) .logo {
 
 .dist_items-slider2 .slick-arrow {
   position: absolute;
-  right: 19px;
+  right: -15px;
   top: 40px;
   cursor: pointer;
   padding: 0;

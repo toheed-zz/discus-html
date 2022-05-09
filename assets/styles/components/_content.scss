@@ -17,9 +17,21 @@
 .store-filter {
 	padding: 0 30px 88px;
 
+	@include media-breakpoint-down(sm) {
+		padding: 0 0 20px;
+	}
+
 	form {
 		display: flex;
 		margin: 0 -5px;
+
+		@include media-breakpoint-down(md) {
+			flex-wrap: wrap;
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin: 0;
+		}
 
 		input[type=text] {
 	      width: 100%;
@@ -43,13 +55,29 @@
 		position: relative;
 		padding: 0 5px;
 
+		@include media-breakpoint-down(md) {
+			margin-bottom: 15px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			width: 100%;
+		}
+
 		&.text-field {
 			width: 213px;
+
+			@include media-breakpoint-down(sm) {
+				width: 100%;
+			}
 		}
 
 		&.select-holder {
 			flex-grow: 1;
 			flex-basis: 0;
+
+			@include media-breakpoint-down(sm) {
+				flex-basis: inherit;
+			}
 		}
 	}
 
@@ -429,12 +457,16 @@
 		padding: 18px 20px;
 		background: $black;
 
+		@include media-breakpoint-down(md) {
+			margin-bottom: 30px;
+		}
+
 		.image {
 			width: 60%;
 			border: 1px solid #fff;
 
 			img {
-				max-width: 100%;
+				width: 100%;
 				height: auto;
 				display: block;
 			}
@@ -471,6 +503,13 @@
 					border: 2px solid #fff;
 					content: '';
 					pointer-events: none;
+
+					@include media-breakpoint-down(sm) {
+						left: 5px;
+						top: 5px;
+						bottom: 5px;
+						right: 5px;
+					}
 				}
 
 				.count {
@@ -479,12 +518,26 @@
 					line-height: 55px;
 					font-family: $khand-font;
 					font-weight: 700;
+
+					@include media-breakpoint-down(sm) {
+						font-size: 40px;
+						line-height: 26px;
+					}
 				}
 
 				.text {
 					font-weight: 300;
 					font-size: 24px;
 					line-height: 28px;
+
+					@include media-breakpoint-down(md) {
+						font-size: 20px;
+					}
+
+					@include media-breakpoint-down(sm) {
+						font-size: 13px;
+						line-height: 15px;
+					}
 				}
 			}
 		}
@@ -513,6 +566,10 @@
 
 			.box {
 				height: 137px;
+
+				@media (max-width: 767.99px) {
+					height: 100px;
+				}
 			}
 		}
 	}
@@ -523,6 +580,11 @@
 		padding-top: 50px;
 		padding-bottom: 50px;
 		position: relative;
+
+		@include media-breakpoint-down(sm) {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
 
 		&:before {
 			position: absolute;
@@ -636,15 +698,7 @@
 
 .dist_items-slider2 {
   text-align: center;
-  padding: 0 70px 0 85px;
-
-  @include media-breakpoint-down(lg) {
-  	padding: 0 100px 0 0;
-  }
-
-  @include media-breakpoint-down(sm) {
-  	padding: 0;
-  }
+  padding: 0;
 
   .slick-prev {
     display: none;
@@ -660,7 +714,7 @@
 
   .slick-arrow {
     position: absolute;
-    right: 19px;
+    right: -15px;
     top: 40px;
     cursor: pointer;
     padding: 0;
