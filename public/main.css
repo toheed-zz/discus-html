@@ -546,12 +546,12 @@ h1,
 
 h2,
 .h2 {
-  font-size: 40px;
+  font-size: 33px;
 }
 
 h3,
 .h3 {
-  font-size: 33px;
+  font-size: 26px;
 }
 
 h4,
@@ -12546,6 +12546,7 @@ body:not(.home) .logo {
   color: #161515;
   font-family: "khand", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
+  background: none;
 }
 
 .store-filter .field-holder {
@@ -12617,6 +12618,57 @@ body:not(.home) .logo {
   line-height: 1;
   display: block;
   margin-right: 3px;
+}
+
+.store-blocks .item-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.store-blocks .item-list li {
+  width: 33.33%;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.store-blocks .item-list .ico {
+  margin: 0 0 20px;
+}
+
+.store-blocks .item-list .title {
+  display: block;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.store-blocks .item-list .name {
+  font-family: "khand", "Arial", "Helvetica", sans-serif;
+  font-weight: 700;
+}
+
+.store-blocks .description {
+  font-weight: 300;
+}
+
+.store-blocks .description .address {
+  display: block;
+  font-size: 22px;
+  line-height: 28px;
+  color: #636363;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.store-blocks .description h2 {
+  margin: 0 0 15px;
+}
+
+.store-blocks .description p {
+  margin: 0 0 40px;
 }
 
 /* stylelint-disable */

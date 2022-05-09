@@ -30,6 +30,7 @@
 	      color: $black;
 	      font-family: $khand-font;
 	      font-weight: 600;
+	      background: none;
 	    }
 	}
 
@@ -92,6 +93,53 @@
 				display: block;
 				margin-right: 3px;
 			}
+		}
+	}
+
+	.item-list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -20px;
+
+		li {
+			width: 33.33%;
+			padding: 0 10px;
+			text-align: center;
+		}
+
+		.ico {
+			margin: 0 0 20px;
+		}
+
+		.title {
+			display: block;
+			font-size: 13px;
+			line-height: 16px;
+		}
+		.name {
+			font-family: $khand-font;
+			font-weight: 700;
+		}
+	}
+
+	.description {
+		font-weight: 300;
+
+		.address {
+			display: block;
+			font-size: 22px;
+			line-height: 28px;
+			color: #636363;
+			text-transform: uppercase;
+			margin: 0 0 10px;
+		}
+
+		h2 {
+			margin: 0 0 15px;
+		}
+
+		p {
+			margin: 0 0 40px;
 		}
 	}
 }
