@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>map</title>
-  <link href="map-style.css" rel="stylesheet" type="text/css">
-  <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
-
-  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Destination</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link href="map-style.css"  rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <span id="usjstip"></span>
@@ -125,7 +125,7 @@
   </div>
 </div>
 <div class="clear"></div>
-<div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -149,8 +149,5 @@
   <script src="bootstrap.min.js"></script>
   <script src="map-config.js"></script>
   <script src="map-interact.js"></script>
-  <script>
-  $(function(){$(document).on( 'scroll', function(){ if ($(window).scrollTop() > 600) {$('.scroll-top').addClass('show');} else {$('.scroll-top').removeClass('show');}});$('.scroll-top').on('click', scrollToTop);});function scrollToTop() {verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;element = $('body');offset = element.offset();offsetTop = offset.top;$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');}
-</script>
 </body>
 </html>
