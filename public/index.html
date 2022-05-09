@@ -8,12 +8,6 @@
 	<link rel="stylesheet" href="custom.css">
 </head>
 <body class="home">
-	<!-- Age Gate trigger modal remove this when actual functionality is added -->
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#agegate" style="position: absolute; z-index: 9999999; left: 0; top: 0">
-	  Launch Age Gate
-	</button>
-
-
 	<div class="wrapper">
 		<section class="top-section">
 			<header class="header">
@@ -715,7 +709,8 @@
 
 
 
-	
+	<!-- Tt's a dummy button to open modal on page load, don't remove it -->
+	<button type="button" class="btn btn-primary" id="agegate_trigger" data-toggle="modal" data-target="#agegate" style="display: none"></button>
 	<!-- Age Gate Modal -->
 	<div class="modal fade" id="agegate" tabindex="-1" role="dialog">
 	  <div class="modal-dialog" role="document">
@@ -749,9 +744,9 @@
 	<script src="map-config.js"></script>
   	<script src="map-interact.js"></script>
   	<script type="text/javascript">		
-	     $(window).load(function(){        
-		   $('#agegate').modal('show');
-			}); 
+	     jQuery(document).ready(function(){       
+		   jQuery("#agegate_trigger").trigger('click'); 
+		 }); 
 	</script>
 
 </body>
