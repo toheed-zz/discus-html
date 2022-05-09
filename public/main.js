@@ -128,7 +128,6 @@ function initSlickCarousel() {
 			}
 		}]
 	});
-
 	jQuery('.dist_items-slider2').slick({
 		slidesToScroll: 1,
 		rows: 0,
@@ -155,7 +154,6 @@ function initSlickCarousel() {
 			}
 		}]
 	});
-
 	jQuery('.stories-slider').slick({
 		slidesToScroll: 1,
 		rows: 0,
