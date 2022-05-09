@@ -34,6 +34,23 @@ body:not(.home) {
   .logo {
     display: block;
   }
+
+  .dist_items {
+    padding-bottom: 0;
+
+    &:before {
+      display: none;
+    }
+
+    .heading {
+      left: 0;
+
+      span {
+        background: $yellow;
+        color: $black;
+      }
+    }
+  }
 }
 
 .logo {
