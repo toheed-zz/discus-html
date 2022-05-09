@@ -388,6 +388,11 @@ a {
   text-transform: uppercase;
   font-weight: 300;
 
+  @include media-breakpoint-down(sm) {
+    font-size: 32px;
+    line-height: 60px;
+  }
+
   .title {
     display: inline-block;
     vertical-align: top;
@@ -506,6 +511,10 @@ a {
 
   &.style01 {
     padding-bottom: 157px;
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 50px;
+    }
 
     .bg-text {
       top: 530px;
