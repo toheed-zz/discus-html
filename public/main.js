@@ -92,7 +92,6 @@ function initMobileNav() {
 		menuDrop: '.explore-area'
 	});
 }
-
 // background video init
 function initBackgroundVideo() {
 	jQuery('.bg-video').backgroundVideo({

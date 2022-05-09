@@ -161,3 +161,222 @@
     margin-top: 50px;
   }
 }
+#mapwrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#mapwrapper path {
+  cursor: pointer;
+  fill: #f9d600;
+}
+#mapwrapper path:hover {
+  fill: #161515;
+}
+#mapwrapper path g,
+#mapwrapper svg g text {
+  font-size: 14px;
+  color: red;
+}
+#visnames text {
+  fill: #fff;
+  pointer-events: none
+}
+#mymodal .modal-header {
+  padding: 0;
+  background: none;
+  border: none;
+}
+#mymodal .modal-content {
+  background: none;
+}
+.modal-backdrop.show {
+  opacity: 0;
+}
+#mymodal .modal-content {
+  border: none
+}
+#mymodal .modal-header .close {
+  padding: 0;
+  width: 30px;
+  height: 32px;
+  border: 3px solid #fff;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  font-weight: bold;
+  margin-right: -30px;
+  margin-top: -25px;
+}
+#mymodal .modal-header .close span {
+  position: relative;
+  top: -7px;
+}
+#mymodal .modal-body,
+#mymodal .modal-dialog {
+  max-width: 634px;
+  width: 100%;
+  padding: 0;
+}
+.map-modal-wrap {
+  display: flex;
+}
+.map-modal-left {
+  width: 47%
+}
+.map-modal-right {
+  width: 53%
+}
+.map-modal-left .map-modal-content,
+.map-modal-right .map-modal-content {
+  border: 2px solid #fff;
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  font-style: 19px;
+  line-height: 26px;
+  padding: 20px;
+  color: #fff;
+  font-weight: 300
+}
+.map-modal-content h3 {
+  font-family: 'jomhuriaregular';
+  font-weight: bold;
+  font-size: 70px;
+  text-transform: uppercase;
+  line-height: 42px;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+.map-modal-left .map-modal-content strong,
+.map-modal-right .map-modal-content strong {
+  font-family: 'khand';
+  font-weight: bold;
+  font-size: 25px;
+  display: block;
+  text-transform: uppercase;
+}
+.map-modal-right p {
+  text-align: left;
+}
+.map-modal-right p strong {
+  margin-top: 10px;
+  display: block;
+}
+
+#agegate {
+  z-index: 99999;
+}
+#agegate .modal-dialog {
+  z-index: 99999;
+  max-width: 512px;
+  width: 100%;
+  background: #161515;
+  border: 3px solid #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4)
+}
+#agegate .modal-dialog .modal-content {
+  background: none;
+  border: none;
+  padding: 35px 30px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+#agegate .modal-dialog .modal-content h2 {
+  font-weight: 300;
+  font-style: 28px;
+  margin: 15px 0 20px;
+  text-transform: uppercase;
+  font-family: 'khand';
+}
+#agegate .modal-dialog .modal-content p {
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0 0 20px;
+}
+#agegate .modal-dialog .modal-content form {
+  display: block;
+  margin-bottom: 10px;
+}
+#agegate .modal-dialog .modal-content form div {
+  text-align: center;
+  margin-bottom: 18px;
+}
+#agegate .modal-dialog .modal-content form input[type="text"] {
+  width: 92px;
+  height: 39px;
+  border: 1px solid #f5d300;
+  background: none;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'khand'; 
+  color: #f5d300;
+  font-weight: 600;
+  line-height: 37px;
+  outline: none;
+  margin: 0 5px;
+}
+#agegate .modal-dialog .modal-content form input[type="text"]::placeholder { 
+  color: #f5d300;
+  opacity: 1;
+}
+#agegate .modal-dialog .modal-content form input[type="text"]:-ms-input-placeholder {
+  color: #f5d300;
+}
+#agegate .modal-dialog .modal-content form input[type="text"]::-ms-input-placeholder {
+  color: #f5d300;
+}
+#agegate .modal-dialog .modal-content form input[type="submit"] {
+  width: 92px;
+  height: 39px;
+  border: 1px solid #fff;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'khand'; 
+  color: #161515;
+  font-weight: 600;
+  line-height: 37px;
+  outline: none;
+  background: #f5d300;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+#agegate .modal-dialog .modal-content form input[type="submit"]:hover {
+  background: #fff;
+}
+.modal-copy {
+  text-align: center;
+  font-size: 11px !important;
+  line-height: 13px !important;
+  margin-top: 22px !important;
+}
+.modal-copy a {
+  color: #fff;
+  text-decoration: underline;
+}
+.modal-copy a:hover {
+  text-decoration: none;
+  color: #f5d300;
+}
+
+@media (max-width: 600px) {
+  #agegate .modal-dialog .modal-content h2 {
+    font-size: 27px !important;
+    margin: 15px 0 10px;
+  }
+  #agegate .modal-dialog {
+    max-width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 460px) {
+  #agegate .modal-dialog .modal-content form input[type="text"],
+  #agegate .modal-dialog .modal-content form input[type="submit"] {
+    margin: 0 auto 12px;
+    width: 100%;  
+  }
+  #agegate .modal-dialog .modal-content h2 {
+    font-size: 23px !important;
+    text-align: center;
+  }
+}

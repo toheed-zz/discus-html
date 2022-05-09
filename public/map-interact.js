@@ -8,9 +8,6 @@ jQuery(function () {
     usaddEvent( jQuery(e).attr("id"));
   });
 });
-jQuery(function () {
-  jQuery('#lakes').find('path').attr({'fill':usjsconfig.general.lakesFill}).css({'stroke':usjsconfig.general.lakesOutline});
-});
 function usaddEvent(id,relationId) {
   var _obj = jQuery("#" + id);
   var arr = id.split("");
@@ -34,20 +31,7 @@ function usaddEvent(id,relationId) {
     }
     _Textobj.mouseup(function () {
       jQuery("#" + id).css({"fill":usjsconfig[id].overColor});
-      if (usjsconfig[id].target === "new_window") {
-        window.open(usjsconfig[id].url);	
-      } else if (usjsconfig[id].target === "same_window") {
-        window.parent.location.href = usjsconfig[id].url;
-      } else if (usjsconfig[id].target === "modal") {
-        jQuery(usjsconfig[id].url).modal("show");
-      }
-    });
-    _Textobj.mousemove(function (e) {
-      var x = e.pageX + 10, y = e.pageY + 15;
-      var tipw =jQuery("#usjstip").outerWidth(), tiph =jQuery("#usjstip").outerHeight(),
-      x = (x + tipw >jQuery(document).scrollLeft() +jQuery(window).width())? x - tipw - (20 * 2) : x ;
-      y = (y + tiph >jQuery(document).scrollTop() +jQuery(window).height())? jQuery(document).scrollTop() +jQuery(window).height() - tiph - 10 : y ;
-      jQuery("#usjstip").css({left: x, top: y});
+     
     });
     if (isTouchEnabled()) {
       _Textobj.on("touchstart", function (e) {
