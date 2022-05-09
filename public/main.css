@@ -10766,6 +10766,11 @@ h1 {
   position: relative;
 }
 
+.top-section.style01 .header {
+  background: #161515;
+  position: relative;
+}
+
 .top-section-holder {
   position: relative;
   overflow: hidden;
@@ -11178,6 +11183,10 @@ h1 {
   .products-area {
     padding: 50px 0 0;
   }
+}
+
+.products-area.style01 {
+  padding-bottom: 157px;
 }
 
 .products-area .bg-text {
