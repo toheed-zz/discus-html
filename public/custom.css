@@ -131,3 +131,33 @@
     margin: 20px 0 35px;
   }
 }
+
+.story-holder {
+  margin-top: 92px;
+}
+.story-holder h2 {
+  font-size: 33px;
+  font-family: 'khand';
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+.story-holder p {
+  font-family: 'palanquin';
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+.story-holder img {
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  .story-holder img {
+    width: 100%;
+    margin-bottom: 30px;
+    display: block;
+  }
+  .story-holder {
+    margin-top: 50px;
+  }
+}
