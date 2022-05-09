@@ -13864,6 +13864,27 @@ body:not(.home) .dist_items .heading span {
   letter-spacing: 2px;
 }
 
+#agegate.modal.show:before {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: '';
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.modal.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* stylelint-disable */
 
 .slick-slider {
