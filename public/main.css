@@ -11417,7 +11417,7 @@ h1 {
   line-height: 58px;
   font-family: "khand", "Arial", "Helvetica", sans-serif;
   color: #f5d300;
-  padding: 0 20px;
+  padding: 0 23px;
 }
 
 @media (max-width: 1175.98px) {
@@ -13515,7 +13515,19 @@ body:not(.home) .logo {
 
 .dist_items-slider2 {
   text-align: center;
-  padding: 0;
+  padding: 0 70px 0 85px;
+}
+
+@media (max-width: 1175.98px) {
+  .dist_items-slider2 {
+    padding: 0 100px 0 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .dist_items-slider2 {
+    padding: 0;
+  }
 }
 
 .dist_items-slider2 .slick-prev {
@@ -13535,7 +13547,7 @@ body:not(.home) .logo {
 
 .dist_items-slider2 .slick-arrow {
   position: absolute;
-  right: -15px;
+  right: 19px;
   top: 40px;
   cursor: pointer;
   padding: 0;

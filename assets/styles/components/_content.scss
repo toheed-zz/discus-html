@@ -698,7 +698,15 @@
 
 .dist_items-slider2 {
   text-align: center;
-  padding: 0;
+  padding: 0 70px 0 85px;
+
+  @include media-breakpoint-down(lg) {
+  	padding: 0 100px 0 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+  	padding: 0;
+  }
 
   .slick-prev {
     display: none;
@@ -714,7 +722,7 @@
 
   .slick-arrow {
     position: absolute;
-    right: -15px;
+    right: 19px;
     top: 40px;
     cursor: pointer;
     padding: 0;
