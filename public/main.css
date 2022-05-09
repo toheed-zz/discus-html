@@ -11588,6 +11588,14 @@ h1 {
   display: block;
 }
 
+.topics-area a {
+  display: block;
+}
+
+.topics-area a:hover img {
+  opacity: 0.75;
+}
+
 .topics-area .title {
   position: absolute;
   left: 0;
@@ -11686,6 +11694,40 @@ h1 {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.stories-area .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.stories-area .actions .btn-primary {
+  margin-right: 30px;
+}
+
+.stories-area .actions .link {
+  position: relative;
+}
+
+.stories-area .actions .link:hover {
+  color: #161515;
+}
+
+.stories-area .actions .link:before {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  font-family: 'icomoon' !important;
+  content: "\E908";
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-size: 16px;
+  line-height: 1;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .stories-area .slick-arrow {
@@ -11844,6 +11886,12 @@ h1 {
   .heading-style h1 {
     line-height: 0.62;
   }
+}
+
+.heading-style sup {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 30px;
 }
 
 .heading-style:before {

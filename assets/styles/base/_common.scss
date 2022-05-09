@@ -844,6 +844,16 @@ a {
     }
   }
 
+  a {
+    display: block;
+
+    &:hover {
+      img {
+        opacity: 0.75;
+      }
+    }
+  }
+
   .title {
     position: absolute;
     left: 0;
@@ -923,6 +933,35 @@ a {
         width: 100%;
         height: auto;
         display: block;
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+
+    .btn-primary {
+      margin-right: 30px;
+    }
+
+    .link {
+      position: relative;
+
+      &:hover {
+        color: $black;
+      }
+
+      &:before {
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        font-family: 'icomoon' !important;
+        content: "\e908";
+        transition: all 0.4s ease;
+        font-size: 16px;
+        line-height: 1;
+        transform: rotate(180deg);
       }
     }
   }
@@ -1050,6 +1089,12 @@ a {
     @include media-breakpoint-down(md) {
       line-height: 0.62;
     }
+  }
+
+  sup {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 30px;
   }
 
   &:before {
