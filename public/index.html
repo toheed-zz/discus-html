@@ -717,7 +717,7 @@
 
 	
 	<!-- Age Gate Modal -->
-	<div class="modal fade" id="agegate" tabindex="-1" role="dialog" aria-labelledby="agegateLabel" aria-hidden="true">
+	<div class="modal fade" id="agegate" tabindex="-1" role="dialog">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      	<div class="welcome">
@@ -748,11 +748,10 @@
 	<script src="main.js"></script>
 	<script src="map-config.js"></script>
   	<script src="map-interact.js"></script>
-  	<script src="lettering.js"></script>
-  	<script type="text/javascript">
-		$(function() {
-			$(".welcome h1").lettering();
-		});
+  	<script type="text/javascript">		
+	     $(window).load(function(){        
+		   $('#agegate').modal('show');
+			}); 
 	</script>
 
 </body>
